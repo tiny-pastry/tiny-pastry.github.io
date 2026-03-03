@@ -505,13 +505,6 @@ img.eyes.amber {
   transition: transform 1s, background-color 1s;
   transform-origin: 0 50%;
 }
-.book .page {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform: translateZ(0px);
-  overflow-y: auto;
-}
 .book .page::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -526,6 +519,13 @@ img.eyes.amber {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color: transparent;
+}
+.book .page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(0px);
+  overflow-y: auto;
 }
 .book .first.open {
   box-shadow: 1em 1em 1em 0.3em rgba(1, 1, 1, 0.4);
@@ -2787,8 +2787,6 @@ img.player {
   border-style: dashed;
   background: color-mix(in srgb, rgb(247, 215, 34), #ffffff 50%);
   box-shadow: 0 0 0 2px color-mix(in srgb, rgb(247, 215, 34), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, rgb(247, 215, 34), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
-  margin: 35px auto;
-  width: 80%;
 }
 #story #passages .passage .confessions:after {
   pointer-events: none;
@@ -2801,6 +2799,10 @@ img.player {
   display: var(--magic-visibility);
   background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
   animation: var(--magic-time) magic alternate ease-in-out infinite;
+}
+#story #passages .passage .confessions {
+  margin: 35px auto;
+  width: 80%;
 }
 #story #passages .passage .confessions .confessions-title {
   margin: 0 20px;
@@ -2943,18 +2945,6 @@ img.player {
   border-style: dashed;
   background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
-  position: relative;
-  padding: 0;
-  border-radius: 0;
-  margin: 20px;
-  padding: 10px;
-  justify-content: center;
-  text-align: center;
-  width: 10em;
-  line-height: 1.2;
-  font-weight: normal;
-  color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  overflow: hidden;
 }
 #store a.equipment-item:after, #wardrobe a.equipment-item:after {
   pointer-events: none;
@@ -2967,6 +2957,20 @@ img.player {
   display: var(--magic-visibility);
   background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
   animation: var(--magic-time) magic alternate ease-in-out infinite;
+}
+#store a.equipment-item, #wardrobe a.equipment-item {
+  position: relative;
+  padding: 0;
+  border-radius: 0;
+  margin: 20px;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  width: 10em;
+  line-height: 1.2;
+  font-weight: normal;
+  color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+  overflow: hidden;
 }
 #store a.equipment-item.head, #store a.equipment-item.bra, #store a.equipment-item.underwear, #store a.equipment-item.chastity, #wardrobe a.equipment-item.head, #wardrobe a.equipment-item.bra, #wardrobe a.equipment-item.underwear, #wardrobe a.equipment-item.chastity {
   height: 10em;
@@ -3014,8 +3018,6 @@ img.player {
   border-style: dashed;
   background: color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #ffffff 50%);
   box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), #ffffff 50%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), #ffffff 50%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), #ffffff 50%);
-  text-shadow: 1px 1px 0 color-mix(in srgb, var(--theme-color), #ffffff 50%), -1px 1px 0 color-mix(in srgb, var(--theme-color), #ffffff 50%), -1px -1px 0 color-mix(in srgb, var(--theme-color), #ffffff 50%), 1px -1px 0 color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  color: color-mix(in srgb, var(--theme-color), #000000 50%);
 }
 #store a.equipment-item.selected:after, #wardrobe a.equipment-item.selected:after {
   pointer-events: none;
@@ -3028,6 +3030,10 @@ img.player {
   display: var(--magic-visibility);
   background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
   animation: var(--magic-time) magic alternate ease-in-out infinite;
+}
+#store a.equipment-item.selected, #wardrobe a.equipment-item.selected {
+  text-shadow: 1px 1px 0 color-mix(in srgb, var(--theme-color), #ffffff 50%), -1px 1px 0 color-mix(in srgb, var(--theme-color), #ffffff 50%), -1px -1px 0 color-mix(in srgb, var(--theme-color), #ffffff 50%), 1px -1px 0 color-mix(in srgb, var(--theme-color), #ffffff 50%);
+  color: color-mix(in srgb, var(--theme-color), #000000 50%);
 }
 #store a.equipment-item.selected:hover, #wardrobe a.equipment-item.selected:hover {
   cursor: default;
@@ -3095,8 +3101,6 @@ img.player {
   border-style: dashed;
   background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
-  width: 254px;
-  padding: 4px 8px;
 }
 #store .outfits .outfit:after, #wardrobe .outfits .outfit:after {
   pointer-events: none;
@@ -3109,6 +3113,10 @@ img.player {
   display: var(--magic-visibility);
   background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
   animation: var(--magic-time) magic alternate ease-in-out infinite;
+}
+#store .outfits .outfit, #wardrobe .outfits .outfit {
+  width: 254px;
+  padding: 4px 8px;
 }
 #store .outfits .outfit .outfit-name, #wardrobe .outfits .outfit .outfit-name {
   text-shadow: 1px 1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), -1px 1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), -1px -1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), 1px -1px 0 color-mix(in srgb, var(--theme-color), #000000 50%);
@@ -3668,14 +3676,6 @@ body {
   min-width: 100%;
 }
 
-body {
-  background-image: var(--background-image);
-  background-repeat: repeat;
-  background-color: var(--background-color);
-  color: black;
-  font-size: 16px;
-  font-family: Georgia, Helmet, Freesans, sans-serif;
-}
 body::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -3690,6 +3690,14 @@ body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color: transparent;
+}
+body {
+  background-image: var(--background-image);
+  background-repeat: repeat;
+  background-color: var(--background-color);
+  color: black;
+  font-size: 16px;
+  font-family: Georgia, Helmet, Freesans, sans-serif;
 }
 
 .cheats-menu ul {
@@ -3774,10 +3782,6 @@ area.closed {
   border-style: dashed;
   background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
-  margin: 10px;
-  bottom: 0;
-  padding: 10px 3px;
-  height: inherit;
 }
 #ui-bar:after, #right-ui-bar:after {
   pointer-events: none;
@@ -3793,6 +3797,12 @@ area.closed {
 }
 #ui-bar:before, #right-ui-bar:before {
   z-index: -1;
+}
+#ui-bar, #right-ui-bar {
+  margin: 10px;
+  bottom: 0;
+  padding: 10px 3px;
+  height: inherit;
 }
 #ui-bar #ui-bar-tray, #ui-bar #right-ui-bar-tray, #right-ui-bar #ui-bar-tray, #right-ui-bar #right-ui-bar-tray {
   left: 0.2em;
@@ -3878,11 +3888,13 @@ area.closed {
   width: 100%;
   height: 56px;
   margin: auto;
-  color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  text-shadow: 1px 1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), -1px 1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), -1px -1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), 1px -1px 0 color-mix(in srgb, var(--theme-color), #000000 50%);
 }
 #ui-bar .menu-bottom a .patreon-subtext, #right-ui-bar .menu-bottom a .patreon-subtext {
   display: block;
+}
+#ui-bar .menu-bottom a, #right-ui-bar .menu-bottom a {
+  color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+  text-shadow: 1px 1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), -1px 1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), -1px -1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), 1px -1px 0 color-mix(in srgb, var(--theme-color), #000000 50%);
 }
 #ui-bar .menu-bottom a:hover, #right-ui-bar .menu-bottom a:hover {
   border: 5px;
@@ -3890,8 +3902,6 @@ area.closed {
   border-style: dashed;
   background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
-  text-decoration: underline;
-  transform: translateX(-3px);
 }
 #ui-bar .menu-bottom a:hover:after, #right-ui-bar .menu-bottom a:hover:after {
   pointer-events: none;
@@ -3904,6 +3914,10 @@ area.closed {
   display: var(--magic-visibility);
   background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
   animation: var(--magic-time) magic alternate ease-in-out infinite;
+}
+#ui-bar .menu-bottom a:hover, #right-ui-bar .menu-bottom a:hover {
+  text-decoration: underline;
+  transform: translateX(-3px);
 }
 
 #ui-bar.stowed {
@@ -4012,12 +4026,6 @@ img.blurred {
   border-style: dashed;
   background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
-  border: 2px ridge var(--theme-color);
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .image-wrapper-outer .image-wrapper-inner:after {
   pointer-events: none;
@@ -4030,6 +4038,14 @@ img.blurred {
   display: var(--magic-visibility);
   background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
   animation: var(--magic-time) magic alternate ease-in-out infinite;
+}
+.image-wrapper-outer .image-wrapper-inner {
+  border: 2px ridge var(--theme-color);
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .image-wrapper-outer .image-wrapper-inner.head, .image-wrapper-outer .image-wrapper-inner.bra, .image-wrapper-outer .image-wrapper-inner.underwear, .image-wrapper-outer .image-wrapper-inner.chastity {
   height: 15em;
@@ -4170,13 +4186,13 @@ a.inline-link img {
   user-select: none;
   z-index: -3;
 }
+.passage img:not(.passage-block *):not(.body *):not(.icon):not(.portrait):not(.portrait-inner):not(.token):not(.minigame *):not(.no-border), .passage img.centered:not(.no-border) {
+  border: 2px ridge var(--theme-color);
+}
 .passage img:not(.passage-block *):not(.body *):not(.icon):not(.portrait):not(.portrait-inner):not(.token):not(.minigame *), .passage img.centered {
   display: block;
   max-width: 38em;
   margin: 5px auto;
-}
-.passage img:not(.passage-block *):not(.body *):not(.icon):not(.portrait):not(.portrait-inner):not(.token):not(.minigame *):not(.no-border), .passage img.centered:not(.no-border) {
-  border: 2px ridge var(--theme-color);
 }
 .passage img:not(.passage-block *):not(.body *):not(.icon):not(.portrait):not(.portrait-inner):not(.token):not(.minigame *).background, .passage img.centered.background {
   background-size: cover;
@@ -4188,12 +4204,6 @@ a.inline-link img {
   border-style: dashed;
   background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
-  display: block;
-  margin: 5px auto;
-  max-height: 60vh;
-  margin-bottom: 15px;
-  padding: 2px;
-  max-width: calc(100% - 20px);
 }
 .passage video:after {
   pointer-events: none;
@@ -4206,6 +4216,14 @@ a.inline-link img {
   display: var(--magic-visibility);
   background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
   animation: var(--magic-time) magic alternate ease-in-out infinite;
+}
+.passage video {
+  display: block;
+  margin: 5px auto;
+  max-height: 60vh;
+  margin-bottom: 15px;
+  padding: 2px;
+  max-width: calc(100% - 20px);
 }
 .passage a:not(.inline-link) {
   border: 5px;
@@ -4264,9 +4282,6 @@ a.inline-link img {
   border-style: dashed;
   background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
-  position: relative;
-  margin: 30px -15px;
-  padding: 10px;
 }
 .passage .passage-block:after {
   pointer-events: none;
@@ -4279,6 +4294,11 @@ a.inline-link img {
   display: var(--magic-visibility);
   background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
   animation: var(--magic-time) magic alternate ease-in-out infinite;
+}
+.passage .passage-block {
+  position: relative;
+  margin: 30px -15px;
+  padding: 10px;
 }
 .passage .say-box {
   position: relative;
@@ -4431,9 +4451,6 @@ a.inline-link img {
   color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
   text-shadow: 1px 1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), -1px 1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), -1px -1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), 1px -1px 0 color-mix(in srgb, var(--theme-color), #000000 50%);
 }
-#ui-dialog #ui-dialog-body {
-  margin-top: 12px;
-}
 #ui-dialog #ui-dialog-body::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -4467,6 +4484,9 @@ a.inline-link img {
   display: var(--magic-visibility);
   background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
   animation: var(--magic-time) magic alternate ease-in-out infinite;
+}
+#ui-dialog #ui-dialog-body {
+  margin-top: 12px;
 }
 #ui-dialog #ui-dialog-body h2 {
   background-color: unset;
@@ -4630,14 +4650,14 @@ a.inline-link img {
 #passages .minigame .passage-background {
   visibility: hidden;
 }
+#passages .minigame #coins-parent .decision {
+  display: none;
+}
 #passages .minigame #coins-parent {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-#passages .minigame #coins-parent .decision {
-  display: none;
 }
 #passages .minigame #coins-parent img {
   display: none;
@@ -4671,41 +4691,71 @@ a.inline-link img {
   border-radius: 50%;
   transform-box: content-box;
 }
+#passages .minigame #coins-parent .small-coins .coin:nth-child(1) {
+  transform: translate(-94%) translateY(-98%) rotateZ(280deg);
+}
+#passages .minigame #coins-parent .small-coins .coin:nth-child(2) {
+  transform: translate(-68%) translateY(-90%) rotateZ(305deg);
+}
+#passages .minigame #coins-parent .small-coins .coin:nth-child(3) {
+  transform: translate(-87%) translateY(-53%) rotateZ(297deg);
+}
+#passages .minigame #coins-parent .small-coins .coin:nth-child(4) {
+  transform: translate(-63%) translateY(-32%) rotateZ(310deg);
+}
+#passages .minigame #coins-parent .small-coins .coin:nth-child(5) {
+  transform: translate(-62%) translateY(-26%) rotateZ(261deg);
+}
+#passages .minigame #coins-parent .small-coins .coin:nth-child(6) {
+  transform: translate(-35%) translateY(-29%) rotateZ(71deg);
+}
+#passages .minigame #coins-parent .small-coins .coin:nth-child(7) {
+  transform: translate(-17%) translateY(-89%) rotateZ(52deg);
+}
+#passages .minigame #coins-parent .small-coins .coin:nth-child(8) {
+  transform: translate(-81%) translateY(-16%) rotateZ(145deg);
+}
+#passages .minigame #coins-parent .small-coins .coin:nth-child(9) {
+  transform: translate(-37%) translateY(-41%) rotateZ(113deg);
+}
+#passages .minigame #coins-parent .small-coins .coin:nth-child(10) {
+  transform: translate(-25%) translateY(-70%) rotateZ(256deg);
+}
 #passages .minigame #coins-parent .small-coins .coin {
   top: 0;
   left: 0;
   width: 6%;
   background-color: #f38f81;
 }
-#passages .minigame #coins-parent .small-coins .coin:nth-child(1) {
-  transform: translate(-18%) translateY(-39%) rotateZ(246deg);
+#passages .minigame #coins-parent .medium-coins .coin:nth-child(1) {
+  transform: translate(-13%) translateY(-9%) rotateZ(108deg);
 }
-#passages .minigame #coins-parent .small-coins .coin:nth-child(2) {
-  transform: translate(-12%) translateY(-67%) rotateZ(236deg);
+#passages .minigame #coins-parent .medium-coins .coin:nth-child(2) {
+  transform: translate(-48%) translateY(-4%) rotateZ(327deg);
 }
-#passages .minigame #coins-parent .small-coins .coin:nth-child(3) {
-  transform: translate(-63%) translateY(-44%) rotateZ(306deg);
+#passages .minigame #coins-parent .medium-coins .coin:nth-child(3) {
+  transform: translate(-50%) translateY(-29%) rotateZ(240deg);
 }
-#passages .minigame #coins-parent .small-coins .coin:nth-child(4) {
-  transform: translate(-48%) translateY(-75%) rotateZ(256deg);
+#passages .minigame #coins-parent .medium-coins .coin:nth-child(4) {
+  transform: translate(-78%) translateY(-72%) rotateZ(62deg);
 }
-#passages .minigame #coins-parent .small-coins .coin:nth-child(5) {
-  transform: translate(-80%) translateY(-52%) rotateZ(284deg);
+#passages .minigame #coins-parent .medium-coins .coin:nth-child(5) {
+  transform: translate(-92%) translateY(-10%) rotateZ(44deg);
 }
-#passages .minigame #coins-parent .small-coins .coin:nth-child(6) {
-  transform: translate(-98%) translateY(-51%) rotateZ(271deg);
+#passages .minigame #coins-parent .medium-coins .coin:nth-child(6) {
+  transform: translate(-31%) translateY(-76%) rotateZ(258deg);
 }
-#passages .minigame #coins-parent .small-coins .coin:nth-child(7) {
-  transform: translate(-44%) translateY(-97%) rotateZ(128deg);
+#passages .minigame #coins-parent .medium-coins .coin:nth-child(7) {
+  transform: translate(-27%) translateY(-8%) rotateZ(346deg);
 }
-#passages .minigame #coins-parent .small-coins .coin:nth-child(8) {
-  transform: translate(-80%) translateY(-87%) rotateZ(34deg);
+#passages .minigame #coins-parent .medium-coins .coin:nth-child(8) {
+  transform: translate(-34%) translateY(-83%) rotateZ(193deg);
 }
-#passages .minigame #coins-parent .small-coins .coin:nth-child(9) {
-  transform: translate(-71%) translateY(-82%) rotateZ(24deg);
+#passages .minigame #coins-parent .medium-coins .coin:nth-child(9) {
+  transform: translate(-84%) translateY(-54%) rotateZ(143deg);
 }
-#passages .minigame #coins-parent .small-coins .coin:nth-child(10) {
-  transform: translate(-47%) translateY(-31%) rotateZ(359deg);
+#passages .minigame #coins-parent .medium-coins .coin:nth-child(10) {
+  transform: translate(-94%) translateY(-42%) rotateZ(96deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin {
   top: 100%;
@@ -4713,35 +4763,35 @@ a.inline-link img {
   width: 7.2%;
   background-color: #7ca587;
 }
-#passages .minigame #coins-parent .medium-coins .coin:nth-child(1) {
-  transform: translate(-67%) translateY(-15%) rotateZ(354deg);
+#passages .minigame #coins-parent .large-coins .coin:nth-child(1) {
+  transform: translate(-27%) translateY(-89%) rotateZ(131deg);
 }
-#passages .minigame #coins-parent .medium-coins .coin:nth-child(2) {
-  transform: translate(-91%) translateY(-8%) rotateZ(178deg);
+#passages .minigame #coins-parent .large-coins .coin:nth-child(2) {
+  transform: translate(-77%) translateY(-28%) rotateZ(359deg);
 }
-#passages .minigame #coins-parent .medium-coins .coin:nth-child(3) {
-  transform: translate(-27%) translateY(-46%) rotateZ(49deg);
+#passages .minigame #coins-parent .large-coins .coin:nth-child(3) {
+  transform: translate(-38%) translateY(-62%) rotateZ(132deg);
 }
-#passages .minigame #coins-parent .medium-coins .coin:nth-child(4) {
-  transform: translate(-75%) translateY(-72%) rotateZ(352deg);
+#passages .minigame #coins-parent .large-coins .coin:nth-child(4) {
+  transform: translate(-21%) translateY(-38%) rotateZ(91deg);
 }
-#passages .minigame #coins-parent .medium-coins .coin:nth-child(5) {
-  transform: translate(-6%) translateY(-62%) rotateZ(360deg);
+#passages .minigame #coins-parent .large-coins .coin:nth-child(5) {
+  transform: translate(-58%) translateY(-85%) rotateZ(286deg);
 }
-#passages .minigame #coins-parent .medium-coins .coin:nth-child(6) {
-  transform: translate(-3%) translateY(-53%) rotateZ(337deg);
+#passages .minigame #coins-parent .large-coins .coin:nth-child(6) {
+  transform: translate(-64%) translateY(-29%) rotateZ(172deg);
 }
-#passages .minigame #coins-parent .medium-coins .coin:nth-child(7) {
-  transform: translate(-58%) translateY(-85%) rotateZ(180deg);
+#passages .minigame #coins-parent .large-coins .coin:nth-child(7) {
+  transform: translate(-42%) translateY(-41%) rotateZ(133deg);
 }
-#passages .minigame #coins-parent .medium-coins .coin:nth-child(8) {
-  transform: translate(-86%) translateY(-49%) rotateZ(92deg);
+#passages .minigame #coins-parent .large-coins .coin:nth-child(8) {
+  transform: translate(-49%) translateY(-38%) rotateZ(241deg);
 }
-#passages .minigame #coins-parent .medium-coins .coin:nth-child(9) {
-  transform: translate(-60%) translateY(-4%) rotateZ(191deg);
+#passages .minigame #coins-parent .large-coins .coin:nth-child(9) {
+  transform: translate(-44%) translateY(-69%) rotateZ(2deg);
 }
-#passages .minigame #coins-parent .medium-coins .coin:nth-child(10) {
-  transform: translate(-25%) translateY(-80%) rotateZ(120deg);
+#passages .minigame #coins-parent .large-coins .coin:nth-child(10) {
+  transform: translate(-67%) translateY(-38%) rotateZ(305deg);
 }
 #passages .minigame #coins-parent .large-coins .coin {
   top: 0;
@@ -4749,71 +4799,41 @@ a.inline-link img {
   width: 8.4%;
   background-color: #8d809b;
 }
-#passages .minigame #coins-parent .large-coins .coin:nth-child(1) {
-  transform: translate(-46%) translateY(-83%) rotateZ(139deg);
+#passages .minigame #coins-parent .huge-coins .coin:nth-child(1) {
+  transform: translate(-75%) translateY(-48%) rotateZ(130deg);
 }
-#passages .minigame #coins-parent .large-coins .coin:nth-child(2) {
-  transform: translate(-74%) translateY(-53%) rotateZ(97deg);
+#passages .minigame #coins-parent .huge-coins .coin:nth-child(2) {
+  transform: translate(-40%) translateY(-69%) rotateZ(150deg);
 }
-#passages .minigame #coins-parent .large-coins .coin:nth-child(3) {
-  transform: translate(-39%) translateY(-26%) rotateZ(271deg);
+#passages .minigame #coins-parent .huge-coins .coin:nth-child(3) {
+  transform: translate(-74%) translateY(-75%) rotateZ(16deg);
 }
-#passages .minigame #coins-parent .large-coins .coin:nth-child(4) {
-  transform: translate(-67%) translateY(-50%) rotateZ(74deg);
+#passages .minigame #coins-parent .huge-coins .coin:nth-child(4) {
+  transform: translate(-70%) translateY(-77%) rotateZ(323deg);
 }
-#passages .minigame #coins-parent .large-coins .coin:nth-child(5) {
-  transform: translate(-60%) translateY(-80%) rotateZ(246deg);
+#passages .minigame #coins-parent .huge-coins .coin:nth-child(5) {
+  transform: translate(-40%) translateY(-68%) rotateZ(279deg);
 }
-#passages .minigame #coins-parent .large-coins .coin:nth-child(6) {
-  transform: translate(-23%) translateY(-77%) rotateZ(293deg);
+#passages .minigame #coins-parent .huge-coins .coin:nth-child(6) {
+  transform: translate(-33%) translateY(-39%) rotateZ(143deg);
 }
-#passages .minigame #coins-parent .large-coins .coin:nth-child(7) {
-  transform: translate(-26%) translateY(-55%) rotateZ(143deg);
+#passages .minigame #coins-parent .huge-coins .coin:nth-child(7) {
+  transform: translate(-61%) translateY(-35%) rotateZ(310deg);
 }
-#passages .minigame #coins-parent .large-coins .coin:nth-child(8) {
-  transform: translate(-65%) translateY(-87%) rotateZ(30deg);
+#passages .minigame #coins-parent .huge-coins .coin:nth-child(8) {
+  transform: translate(-55%) translateY(-33%) rotateZ(290deg);
 }
-#passages .minigame #coins-parent .large-coins .coin:nth-child(9) {
-  transform: translate(-56%) translateY(-39%) rotateZ(303deg);
+#passages .minigame #coins-parent .huge-coins .coin:nth-child(9) {
+  transform: translate(-47%) translateY(-59%) rotateZ(59deg);
 }
-#passages .minigame #coins-parent .large-coins .coin:nth-child(10) {
-  transform: translate(-88%) translateY(-53%) rotateZ(218deg);
+#passages .minigame #coins-parent .huge-coins .coin:nth-child(10) {
+  transform: translate(-72%) translateY(-66%) rotateZ(320deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin {
   top: 100%;
   left: 100%;
   width: 9.6%;
   background-color: #efd920;
-}
-#passages .minigame #coins-parent .huge-coins .coin:nth-child(1) {
-  transform: translate(-47%) translateY(-37%) rotateZ(270deg);
-}
-#passages .minigame #coins-parent .huge-coins .coin:nth-child(2) {
-  transform: translate(-73%) translateY(-59%) rotateZ(3deg);
-}
-#passages .minigame #coins-parent .huge-coins .coin:nth-child(3) {
-  transform: translate(-30%) translateY(-54%) rotateZ(5deg);
-}
-#passages .minigame #coins-parent .huge-coins .coin:nth-child(4) {
-  transform: translate(-66%) translateY(-61%) rotateZ(151deg);
-}
-#passages .minigame #coins-parent .huge-coins .coin:nth-child(5) {
-  transform: translate(-59%) translateY(-56%) rotateZ(191deg);
-}
-#passages .minigame #coins-parent .huge-coins .coin:nth-child(6) {
-  transform: translate(-51%) translateY(-31%) rotateZ(166deg);
-}
-#passages .minigame #coins-parent .huge-coins .coin:nth-child(7) {
-  transform: translate(-36%) translateY(-66%) rotateZ(298deg);
-}
-#passages .minigame #coins-parent .huge-coins .coin:nth-child(8) {
-  transform: translate(-76%) translateY(-79%) rotateZ(172deg);
-}
-#passages .minigame #coins-parent .huge-coins .coin:nth-child(9) {
-  transform: translate(-66%) translateY(-49%) rotateZ(229deg);
-}
-#passages .minigame #coins-parent .huge-coins .coin:nth-child(10) {
-  transform: translate(-33%) translateY(-67%) rotateZ(44deg);
 }
 #passages .minigame #coins-parent .bowl {
   user-drag: none;
@@ -4867,14 +4887,15 @@ a.inline-link img {
   position: relative;
   height: 100%;
 }
+#passages .minigame #writing-parent .decision {
+  display: none;
+}
 #passages .minigame #writing-parent {
   position: fixed;
+  max-height: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-#passages .minigame #writing-parent .decision {
-  display: none;
 }
 #passages .minigame #writing-parent * {
   margin: 0;
@@ -5020,15 +5041,6 @@ a.inline-link img {
   border-style: dashed;
   background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
-  position: fixed;
-  display: block;
-  z-index: 20;
-  max-width: 280px;
-  top: 2em;
-  padding: 0.5em;
-  color: #000;
-  transition: right 0.3s ease-in-out;
-  right: 0px;
 }
 #notify:after {
   pointer-events: none;
@@ -5042,6 +5054,16 @@ a.inline-link img {
   background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
   animation: var(--magic-time) magic alternate ease-in-out infinite;
 }
+#notify {
+  position: fixed;
+  display: block;
+  z-index: 20;
+  max-width: 280px;
+  top: 2em;
+  padding: 0.5em;
+  color: #000;
+  transition: right 0.3s ease-in-out;
+}
 #notify span {
   display: inline-block;
 }
@@ -5053,14 +5075,17 @@ a.inline-link img {
   width: 16px;
   margin-right: 4px;
 }
-#notify.stowed {
-  right: -264px;
-}
 #notify.stowed.open {
   right: 62px;
 }
+#notify.stowed {
+  right: -264px;
+}
 #notify.open {
   right: 326px;
+}
+#notify {
+  right: 0px;
 }
 
 #popup {
@@ -5269,7 +5294,7 @@ a.inline-link img {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: radial-gradient(5px 5px at 120px 302px, rgb(255, 255, 255) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 483px 123px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 456px 443px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 353px 484px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 432px 73px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 402px 309px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0));
+  background-image: radial-gradient(3px 3px at 68px 344px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 201px 216px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 380px 201px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 306px 368px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 477px 159px, rgb(255, 255, 255) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 123px 430px, rgb(255, 255, 255) 50%, rgba(0, 0, 0, 0));
   background-size: 500px 500px;
   animation: snow 7s linear infinite;
   content: "";
@@ -5410,10 +5435,6 @@ a.inline-link img {
     opacity: 1;
   }
 }
-.notification {
-  display: inline-block;
-  border: 1px solid;
-}
 .notification.positive {
   color: green;
   border-color: green;
@@ -5421,6 +5442,10 @@ a.inline-link img {
 .notification.negative {
   color: red;
   border-color: red;
+}
+.notification {
+  display: inline-block;
+  border: 1px solid;
 }
 
 .icon {
@@ -5960,7 +5985,7 @@ span.icon {
   width: 1px;
   height: 1px;
   background: transparent;
-  box-shadow: 222px 17px #FFF , 108px 30px #FFF , 222px 22px #FFF , 107px 11px #FFF , 97px 3px #FFF , 97px 35px #FFF , 62px 41px #FFF , 237px 26px #FFF , 149px 31px #FFF , 119px 22px #FFF , 24px 26px #FFF , 151px 37px #FFF , 38px 27px #FFF , 140px 19px #FFF , 152px 1px #FFF , 20px 5px #FFF , 147px 40px #FFF , 70px 16px #FFF , 147px 2px #FFF , 226px 26px #FFF , 118px 14px #FFF , 183px 17px #FFF , 72px 15px #FFF , 15px 25px #FFF , 151px 5px #FFF , 241px 15px #FFF , 227px 38px #FFF , 229px 6px #FFF , 216px 5px #FFF , 69px 25px #FFF , 20px 28px #FFF , 24px 21px #FFF , 247px 36px #FFF , 88px 28px #FFF , 98px 23px #FFF , 57px 12px #FFF , 25px 8px #FFF , 220px 4px #FFF , 92px 7px #FFF , 147px 39px #FFF , 9px 39px #FFF , 77px 9px #FFF , 60px 14px #FFF , 20px 10px #FFF , 108px 3px #FFF , 226px 37px #FFF , 45px 22px #FFF , 114px 1px #FFF , 106px 28px #FFF , 212px 11px #FFF , 23px 38px #FFF , 158px 39px #FFF , 21px 20px #FFF , 124px 6px #FFF , 181px 38px #FFF , 214px 7px #FFF , 59px 40px #FFF , 162px 19px #FFF , 165px 2px #FFF , 77px 26px #FFF , 173px 38px #FFF , 186px 38px #FFF , 83px 30px #FFF , 170px 43px #FFF , 66px 9px #FFF , 186px 32px #FFF , 101px 23px #FFF , 234px 2px #FFF , 190px 19px #FFF , 193px 34px #FFF , 125px 27px #FFF , 84px 36px #FFF , 183px 22px #FFF , 211px 23px #FFF , 14px 4px #FFF , 190px 22px #FFF , 237px 20px #FFF , 112px 10px #FFF , 199px 23px #FFF , 157px 29px #FFF , 78px 21px #FFF , 48px 36px #FFF , 154px 43px #FFF , 29px 35px #FFF , 146px 1px #FFF , 129px 36px #FFF , 153px 5px #FFF , 155px 21px #FFF , 181px 11px #FFF , 13px 40px #FFF , 96px 27px #FFF , 209px 13px #FFF , 12px 12px #FFF , 142px 40px #FFF , 71px 4px #FFF , 160px 25px #FFF , 146px 7px #FFF , 3px 5px #FFF , 106px 3px #FFF , 238px 2px #FFF;
+  box-shadow: 197px 15px #FFF , 235px 41px #FFF , 23px 26px #FFF , 173px 32px #FFF , 111px 24px #FFF , 115px 11px #FFF , 17px 13px #FFF , 3px 35px #FFF , 21px 23px #FFF , 132px 37px #FFF , 141px 7px #FFF , 25px 5px #FFF , 153px 12px #FFF , 240px 34px #FFF , 8px 37px #FFF , 139px 30px #FFF , 74px 13px #FFF , 2px 23px #FFF , 244px 34px #FFF , 17px 30px #FFF , 96px 13px #FFF , 206px 22px #FFF , 162px 9px #FFF , 71px 43px #FFF , 225px 38px #FFF , 93px 8px #FFF , 156px 2px #FFF , 112px 30px #FFF , 202px 31px #FFF , 104px 36px #FFF , 190px 28px #FFF , 117px 21px #FFF , 98px 43px #FFF , 111px 4px #FFF , 87px 39px #FFF , 46px 39px #FFF , 75px 7px #FFF , 228px 3px #FFF , 34px 20px #FFF , 226px 15px #FFF , 145px 29px #FFF , 96px 35px #FFF , 98px 39px #FFF , 137px 42px #FFF , 100px 11px #FFF , 242px 36px #FFF , 93px 6px #FFF , 218px 12px #FFF , 21px 10px #FFF , 179px 16px #FFF , 88px 11px #FFF , 127px 15px #FFF , 55px 20px #FFF , 185px 28px #FFF , 115px 42px #FFF , 10px 37px #FFF , 22px 36px #FFF , 2px 11px #FFF , 69px 32px #FFF , 187px 29px #FFF , 154px 34px #FFF , 36px 30px #FFF , 151px 40px #FFF , 191px 38px #FFF , 6px 13px #FFF , 90px 4px #FFF , 140px 31px #FFF , 129px 5px #FFF , 214px 39px #FFF , 123px 2px #FFF , 159px 8px #FFF , 72px 2px #FFF , 35px 18px #FFF , 131px 35px #FFF , 95px 18px #FFF , 206px 17px #FFF , 64px 30px #FFF , 114px 15px #FFF , 215px 12px #FFF , 110px 38px #FFF , 22px 4px #FFF , 104px 42px #FFF , 17px 34px #FFF , 115px 1px #FFF , 116px 42px #FFF , 137px 6px #FFF , 93px 22px #FFF , 221px 16px #FFF , 43px 43px #FFF , 153px 23px #FFF , 222px 34px #FFF , 51px 17px #FFF , 67px 22px #FFF , 132px 35px #FFF , 162px 18px #FFF , 186px 32px #FFF , 65px 8px #FFF , 166px 25px #FFF , 217px 34px #FFF , 208px 39px #FFF;
 }
 #story-caption #time-cycle #stars:after {
   content: " ";
@@ -5969,7 +5994,7 @@ span.icon {
   width: 1px;
   height: 1px;
   background: transparent;
-  box-shadow: 222px 17px #FFF , 108px 30px #FFF , 222px 22px #FFF , 107px 11px #FFF , 97px 3px #FFF , 97px 35px #FFF , 62px 41px #FFF , 237px 26px #FFF , 149px 31px #FFF , 119px 22px #FFF , 24px 26px #FFF , 151px 37px #FFF , 38px 27px #FFF , 140px 19px #FFF , 152px 1px #FFF , 20px 5px #FFF , 147px 40px #FFF , 70px 16px #FFF , 147px 2px #FFF , 226px 26px #FFF , 118px 14px #FFF , 183px 17px #FFF , 72px 15px #FFF , 15px 25px #FFF , 151px 5px #FFF , 241px 15px #FFF , 227px 38px #FFF , 229px 6px #FFF , 216px 5px #FFF , 69px 25px #FFF , 20px 28px #FFF , 24px 21px #FFF , 247px 36px #FFF , 88px 28px #FFF , 98px 23px #FFF , 57px 12px #FFF , 25px 8px #FFF , 220px 4px #FFF , 92px 7px #FFF , 147px 39px #FFF , 9px 39px #FFF , 77px 9px #FFF , 60px 14px #FFF , 20px 10px #FFF , 108px 3px #FFF , 226px 37px #FFF , 45px 22px #FFF , 114px 1px #FFF , 106px 28px #FFF , 212px 11px #FFF , 23px 38px #FFF , 158px 39px #FFF , 21px 20px #FFF , 124px 6px #FFF , 181px 38px #FFF , 214px 7px #FFF , 59px 40px #FFF , 162px 19px #FFF , 165px 2px #FFF , 77px 26px #FFF , 173px 38px #FFF , 186px 38px #FFF , 83px 30px #FFF , 170px 43px #FFF , 66px 9px #FFF , 186px 32px #FFF , 101px 23px #FFF , 234px 2px #FFF , 190px 19px #FFF , 193px 34px #FFF , 125px 27px #FFF , 84px 36px #FFF , 183px 22px #FFF , 211px 23px #FFF , 14px 4px #FFF , 190px 22px #FFF , 237px 20px #FFF , 112px 10px #FFF , 199px 23px #FFF , 157px 29px #FFF , 78px 21px #FFF , 48px 36px #FFF , 154px 43px #FFF , 29px 35px #FFF , 146px 1px #FFF , 129px 36px #FFF , 153px 5px #FFF , 155px 21px #FFF , 181px 11px #FFF , 13px 40px #FFF , 96px 27px #FFF , 209px 13px #FFF , 12px 12px #FFF , 142px 40px #FFF , 71px 4px #FFF , 160px 25px #FFF , 146px 7px #FFF , 3px 5px #FFF , 106px 3px #FFF , 238px 2px #FFF;
+  box-shadow: 197px 15px #FFF , 235px 41px #FFF , 23px 26px #FFF , 173px 32px #FFF , 111px 24px #FFF , 115px 11px #FFF , 17px 13px #FFF , 3px 35px #FFF , 21px 23px #FFF , 132px 37px #FFF , 141px 7px #FFF , 25px 5px #FFF , 153px 12px #FFF , 240px 34px #FFF , 8px 37px #FFF , 139px 30px #FFF , 74px 13px #FFF , 2px 23px #FFF , 244px 34px #FFF , 17px 30px #FFF , 96px 13px #FFF , 206px 22px #FFF , 162px 9px #FFF , 71px 43px #FFF , 225px 38px #FFF , 93px 8px #FFF , 156px 2px #FFF , 112px 30px #FFF , 202px 31px #FFF , 104px 36px #FFF , 190px 28px #FFF , 117px 21px #FFF , 98px 43px #FFF , 111px 4px #FFF , 87px 39px #FFF , 46px 39px #FFF , 75px 7px #FFF , 228px 3px #FFF , 34px 20px #FFF , 226px 15px #FFF , 145px 29px #FFF , 96px 35px #FFF , 98px 39px #FFF , 137px 42px #FFF , 100px 11px #FFF , 242px 36px #FFF , 93px 6px #FFF , 218px 12px #FFF , 21px 10px #FFF , 179px 16px #FFF , 88px 11px #FFF , 127px 15px #FFF , 55px 20px #FFF , 185px 28px #FFF , 115px 42px #FFF , 10px 37px #FFF , 22px 36px #FFF , 2px 11px #FFF , 69px 32px #FFF , 187px 29px #FFF , 154px 34px #FFF , 36px 30px #FFF , 151px 40px #FFF , 191px 38px #FFF , 6px 13px #FFF , 90px 4px #FFF , 140px 31px #FFF , 129px 5px #FFF , 214px 39px #FFF , 123px 2px #FFF , 159px 8px #FFF , 72px 2px #FFF , 35px 18px #FFF , 131px 35px #FFF , 95px 18px #FFF , 206px 17px #FFF , 64px 30px #FFF , 114px 15px #FFF , 215px 12px #FFF , 110px 38px #FFF , 22px 4px #FFF , 104px 42px #FFF , 17px 34px #FFF , 115px 1px #FFF , 116px 42px #FFF , 137px 6px #FFF , 93px 22px #FFF , 221px 16px #FFF , 43px 43px #FFF , 153px 23px #FFF , 222px 34px #FFF , 51px 17px #FFF , 67px 22px #FFF , 132px 35px #FFF , 162px 18px #FFF , 186px 32px #FFF , 65px 8px #FFF , 166px 25px #FFF , 217px 34px #FFF , 208px 39px #FFF;
 }
 #story-caption #time-cycle.morning {
   background-color: rgb(8, 55, 124);
@@ -14753,9 +14778,9 @@ $(document).on(':passagestart', function () {
 // Config.passages.nobr = true;
 Config.history.maxStates = 30;
 
-setup.cheats = false;
-setup.patreonLink = true;
-setup.newVersion = "0.5.0";
+setup.cheats = true;
+setup.patreonLink = false;
+setup.newVersion = "0.3.0";
 
 $(document.head).append('<link rel="icon" href="favicon.png">');
 
@@ -15672,7 +15697,7 @@ function writingMinigame() {
 
     function generateText() {
         var ipsum = new LoremIpsum();
-        let nSentences = 3;
+        let nSentences = screen.height < 600 ? 2 : 3;
 
         let array = [];
 
@@ -18225,7 +18250,7 @@ Template.add(['asshole'], function() {
 //9926 = v0.0.99z
 //999926 = v0.99.99z
 //99999926 = v99.99.99z
-Config.saves.version = 40201;
+Config.saves.version = 40202;
 
 Config.saves.maxAutoSaves = 3;
 Config.saves.maxSlotSaves = 6;
@@ -18482,6 +18507,10 @@ Save.onLoad.add(function (save) {
 
     if (save.version < 40201) {
         save.version = 40201;
+    }
+
+    if (save.version < 40202) {
+        save.version = 40202;
     }
 
     if (originalVersion !== save.version) {
@@ -27047,40 +27076,16 @@ You feel your cheeks grow hot with embarrassment. At least ?Leopold doesn&#39;t 
 
     &lt;&lt;decision &#39;Return to the castle&#39; &#39;Hallway&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
 
-&lt;&lt;/decision&gt;&gt;</tw-passagedata><tw-passagedata pid="338" name="Morgana" tags="" position="975,4225" size="100,100">&lt;&lt;if hasQuest(&#39;interrogate-morgana&#39;)&gt;&gt;
-    &lt;&lt;decision &#39;Confront ?Morgana&#39; &#39;Morgana Confront About Assassin&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
-&lt;&lt;/if&gt;&gt;
-&lt;&lt;if getCharacterLocation(&#39;morgana&#39;) is &#39;Library&#39; and hasQuest(&#39;meet-morgana&#39;)&gt;&gt;
-    &lt;&lt;set _quest to true&gt;&gt;
+&lt;&lt;/decision&gt;&gt;</tw-passagedata><tw-passagedata pid="338" name="Morgana" tags="" position="975,4225" size="100,100">&lt;&lt;if getCharacterLocation(&#39;morgana&#39;) is &#39;Library&#39; and hasQuest(&#39;meet-morgana&#39;)&gt;&gt;
     &lt;&lt;decision &#39;You see ?Morgana here, reading some magic tome&#39; &#39;Meet Morgana 1&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;if getCharacterLocation(&#39;morgana&#39;) is &#39;Bedroom&#39; and getTime() === &#39;night&#39;&gt;&gt;
-    &lt;&lt;if hasQuest(&#39;morgana-bedroom&#39;)&gt;&gt;
-        &lt;&lt;set _quest to true&gt;&gt;
-        &lt;&lt;decision &#39;You hear a knocking on your bedroom door&#39; &#39;Morgana Bedroom 1&#39;&gt;&gt;
-            &lt;&lt;disableif isInChastity()&gt;&gt;
-                You can&#39;t be wearing a chastity cage.
-        &lt;&lt;/decision&gt;&gt;
-    &lt;&lt;/if&gt;&gt;
-    &lt;&lt;if hasQuest(&#39;morgana-potion&#39;)&gt;&gt;
-        &lt;&lt;set _quest to true&gt;&gt;
-        &lt;&lt;decision &#39;You hear a knocking on your bedroom door, sounds like it\&#39;s ?Morgana again&#39; &#39;Morgana Potion 1&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
-    &lt;&lt;/if&gt;&gt;
-&lt;&lt;/if&gt;&gt;
-&lt;&lt;if getCharacterLocation(&#39;morgana&#39;) is &#39;Workshop&#39;&gt;&gt;
-    &lt;&lt;if hasQuest(&#39;morgana-workshop-visit&#39;) and !hasCounter(&#39;morgana-quest-delay&#39;)&gt;&gt;
-        &lt;&lt;decision &#39;Talk about the next steps&#39; &#39;Morgana Forest Plan&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
-    &lt;&lt;elseif hasQuest(&#39;morgana-potion-store&#39;)&gt;&gt;
-        &lt;&lt;decision &#39;Inquire about the new potions&#39; &#39;Morgana Workshop New Potion&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
-    &lt;&lt;else&gt;&gt;
-        &lt;&lt;decision &#39;Visit ?Morgana&#39; &#39;Morgana Workshop Visit&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
-    &lt;&lt;/if&gt;&gt;
+&lt;&lt;if hasQuest(&#39;interrogate-morgana&#39;)&gt;&gt;
+    &lt;&lt;decision &#39;Confront ?Morgana&#39; &#39;Morgana Confront About Assassin&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if hasQuest(&#39;morgana-ointment&#39;)&gt;&gt;
     &lt;&lt;decision &#39;Talk to ?Morgana about the ointment&#39; &#39;Morgana Ointment 3&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if hasQuest(&#39;morgana-kitchen&#39;)&gt;&gt;
-    &lt;&lt;set _quest to true&gt;&gt;
     &lt;&lt;decision &#39;Meet ?Morgana to discuss the expedition&#39; &#39;Morgana Kitchen 1&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if hasQuest(&#39;morgana-confront&#39;)&gt;&gt;
@@ -27093,11 +27098,32 @@ You feel your cheeks grow hot with embarrassment. At least ?Leopold doesn&#39;t 
     &lt;&lt;decision &#39;Discuss your Princess lessons with ?Morgana&#39; &#39;Morgana Finish Princess Training Intro&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
+&lt;&lt;if getCharacterLocation(&#39;morgana&#39;) is &#39;Bedroom&#39; and getTime() === &#39;night&#39;&gt;&gt;
+    &lt;&lt;if hasQuest(&#39;morgana-bedroom&#39;)&gt;&gt;
+        &lt;&lt;decision &#39;You hear a knocking on your bedroom door&#39; &#39;Morgana Bedroom 1&#39;&gt;&gt;
+            &lt;&lt;disableif isInChastity()&gt;&gt;
+                You can&#39;t be wearing a chastity cage.
+        &lt;&lt;/decision&gt;&gt;
+    &lt;&lt;/if&gt;&gt;
+    &lt;&lt;if hasQuest(&#39;morgana-potion&#39;)&gt;&gt;
+        &lt;&lt;decision &#39;You hear a knocking on your bedroom door, sounds like it\&#39;s ?Morgana again&#39; &#39;Morgana Potion 1&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
+    &lt;&lt;/if&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if getCharacterLocation(&#39;morgana&#39;) is &#39;Workshop&#39;&gt;&gt;
+    &lt;&lt;if hasQuest(&#39;morgana-workshop-visit&#39;) and !hasCounter(&#39;morgana-quest-delay&#39;)&gt;&gt;
+        &lt;&lt;decision &#39;Talk about the next steps&#39; &#39;Morgana Forest Plan&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
+    &lt;&lt;elseif hasQuest(&#39;morgana-potion-store&#39;)&gt;&gt;
+        &lt;&lt;decision &#39;Inquire about the new potions&#39; &#39;Morgana Workshop New Potion&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
+    &lt;&lt;else&gt;&gt;
+        &lt;&lt;decision &#39;Visit ?Morgana&#39; &#39;Morgana Workshop Visit&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
+    &lt;&lt;/if&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
 &lt;&lt;if getCharacterLocation(&#39;morgana&#39;) is &#39;Garden&#39;&gt;&gt;
-    &lt;&lt;if hasQuest(&#39;morgana-ointment-garden&#39;) and getTime() === &#39;morning&#39;&gt;&gt;
-        &lt;&lt;set _quest to true&gt;&gt;
+    &lt;&lt;if hasQuest(&#39;morgana-ointment-garden&#39;) &amp;&amp; getTime() === &#39;morning&#39;&gt;&gt;
         &lt;&lt;decision &#39;You spot ?Morgana, standing next to the flowerbeds&#39; &#39;Morgana Ointment 1&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
-    &lt;&lt;elseif !_quest&gt;&gt;
+    &lt;&lt;else&gt;&gt;
         &lt;&lt;decision &#39;You see ?Morgana painting on a canvas in the grass&#39; &#39;Morgana Painting&#39;&gt;&gt;&lt;&lt;/decision&gt;&gt;
     &lt;&lt;/if&gt;&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="339" name="Morgana Acknowledgement" tags="" position="1100,4225" size="100,100">&lt;&lt;acknowledgement morgana&gt;&gt;
@@ -42227,6 +42253,14 @@ If you haven&#39;t done so already, come join us on &lt;a href=&quot;https://dis
     &lt;&lt;animation 500ms linear&gt;&gt;
     &lt;&lt;sizing &#39;100%&#39;&gt;&gt;
 &lt;&lt;/newmeter&gt;&gt;</tw-passagedata><tw-passagedata pid="970" name="Changelog" tags="br no-location no-title" position="1225,12100" size="100,100">&lt;&lt;dialog &#39;Changelog&#39; &#39;changelog-menu&#39;&gt;&gt; \
+!!v0.4.2b
+* Fixed a bug where the quest to visit ?Morgana in castle gardens at morning would never get triggered for some people.
+* Fixed a bug where the button to complete ?Andreas&#39; writing minigame was sometimes not visible when playing on smaller screen sizes.
+
+!!v0.4.2a
+* Fixed a bug where the new ?Sybille scene could not be repeated.
+* ?Devota now refers to you using feminine pronouns in the confession booth after you reveal to her that you want to become a princess.
+
 !!v0.4.2
 * New spicy scene with the royal dominatrix, ?Sybille.
 ** Go to her at night after you have finished all previous encounters to enter this new experience. Choose a safeword and let yourself be dominated by your mistress of spies.
