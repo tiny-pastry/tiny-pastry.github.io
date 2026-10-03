@@ -256,9 +256,20 @@ img.eyes.amber, video.eyes.amber {
 .body.outline {
   border: 5px;
   border-color: var(--theme-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .body.outline {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .body.outline {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .body.outline:after {
   pointer-events: none;
@@ -1157,9 +1168,20 @@ img.player {
 .player.say-box, .player#ui-dialog-body {
   border: 5px;
   border-color: var(--player-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--player-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--player-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--player-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .player.say-box, .player#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--player-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--player-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .player.say-box, .player#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--player-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--player-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--player-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .player.say-box:after, .player#ui-dialog-body:after {
   pointer-events: none;
@@ -1204,9 +1226,20 @@ img.player {
 .king.say-box, .king#ui-dialog-body {
   border: 5px;
   border-color: var(--king-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--king-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .king.say-box, .king#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .king.say-box, .king#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--king-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .king.say-box:after, .king#ui-dialog-body:after {
   pointer-events: none;
@@ -1229,9 +1262,20 @@ img.player {
 .king.book-portrait {
   border: 5px;
   border-color: var(--king-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--king-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .king.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .king.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--king-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .king.book-portrait:after {
   pointer-events: none;
@@ -1260,9 +1304,20 @@ img.player {
 .orson.say-box, .orson#ui-dialog-body {
   border: 5px;
   border-color: var(--orson-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--orson-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .orson.say-box, .orson#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .orson.say-box, .orson#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--orson-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .orson.say-box:after, .orson#ui-dialog-body:after {
   pointer-events: none;
@@ -1285,9 +1340,20 @@ img.player {
 .orson.book-portrait {
   border: 5px;
   border-color: var(--orson-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--orson-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .orson.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .orson.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--orson-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .orson.book-portrait:after {
   pointer-events: none;
@@ -1316,9 +1382,20 @@ img.player {
 .morgana.say-box, .morgana#ui-dialog-body {
   border: 5px;
   border-color: var(--morgana-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--morgana-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .morgana.say-box, .morgana#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .morgana.say-box, .morgana#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--morgana-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .morgana.say-box:after, .morgana#ui-dialog-body:after {
   pointer-events: none;
@@ -1341,9 +1418,20 @@ img.player {
 .morgana.book-portrait {
   border: 5px;
   border-color: var(--morgana-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--morgana-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .morgana.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .morgana.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--morgana-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .morgana.book-portrait:after {
   pointer-events: none;
@@ -1372,9 +1460,20 @@ img.player {
 .rosa.say-box, .rosa#ui-dialog-body {
   border: 5px;
   border-color: var(--rosa-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--rosa-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .rosa.say-box, .rosa#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .rosa.say-box, .rosa#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--rosa-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .rosa.say-box:after, .rosa#ui-dialog-body:after {
   pointer-events: none;
@@ -1397,9 +1496,20 @@ img.player {
 .rosa.book-portrait {
   border: 5px;
   border-color: var(--rosa-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--rosa-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .rosa.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .rosa.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--rosa-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .rosa.book-portrait:after {
   pointer-events: none;
@@ -1428,9 +1538,20 @@ img.player {
 .andreas.say-box, .andreas#ui-dialog-body {
   border: 5px;
   border-color: var(--andreas-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--andreas-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .andreas.say-box, .andreas#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .andreas.say-box, .andreas#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--andreas-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .andreas.say-box:after, .andreas#ui-dialog-body:after {
   pointer-events: none;
@@ -1453,9 +1574,20 @@ img.player {
 .andreas.book-portrait {
   border: 5px;
   border-color: var(--andreas-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--andreas-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .andreas.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .andreas.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--andreas-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .andreas.book-portrait:after {
   pointer-events: none;
@@ -1484,9 +1616,20 @@ img.player {
 .sybille.say-box, .sybille#ui-dialog-body {
   border: 5px;
   border-color: var(--sybille-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--sybille-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .sybille.say-box, .sybille#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .sybille.say-box, .sybille#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--sybille-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .sybille.say-box:after, .sybille#ui-dialog-body:after {
   pointer-events: none;
@@ -1509,9 +1652,20 @@ img.player {
 .sybille.book-portrait {
   border: 5px;
   border-color: var(--sybille-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--sybille-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .sybille.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .sybille.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--sybille-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .sybille.book-portrait:after {
   pointer-events: none;
@@ -1540,9 +1694,20 @@ img.player {
 .leopold.say-box, .leopold#ui-dialog-body {
   border: 5px;
   border-color: var(--leopold-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--leopold-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .leopold.say-box, .leopold#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .leopold.say-box, .leopold#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--leopold-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .leopold.say-box:after, .leopold#ui-dialog-body:after {
   pointer-events: none;
@@ -1565,9 +1730,20 @@ img.player {
 .leopold.book-portrait {
   border: 5px;
   border-color: var(--leopold-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--leopold-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .leopold.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .leopold.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--leopold-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .leopold.book-portrait:after {
   pointer-events: none;
@@ -1596,9 +1772,20 @@ img.player {
 .wymerus.say-box, .wymerus#ui-dialog-body {
   border: 5px;
   border-color: var(--wymerus-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--wymerus-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .wymerus.say-box, .wymerus#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .wymerus.say-box, .wymerus#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--wymerus-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .wymerus.say-box:after, .wymerus#ui-dialog-body:after {
   pointer-events: none;
@@ -1621,9 +1808,20 @@ img.player {
 .wymerus.book-portrait {
   border: 5px;
   border-color: var(--wymerus-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--wymerus-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .wymerus.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .wymerus.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--wymerus-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .wymerus.book-portrait:after {
   pointer-events: none;
@@ -1652,9 +1850,20 @@ img.player {
 .caspar.say-box, .caspar#ui-dialog-body {
   border: 5px;
   border-color: var(--caspar-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--caspar-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .caspar.say-box, .caspar#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .caspar.say-box, .caspar#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--caspar-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .caspar.say-box:after, .caspar#ui-dialog-body:after {
   pointer-events: none;
@@ -1677,9 +1886,20 @@ img.player {
 .caspar.book-portrait {
   border: 5px;
   border-color: var(--caspar-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--caspar-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .caspar.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .caspar.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--caspar-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .caspar.book-portrait:after {
   pointer-events: none;
@@ -1708,9 +1928,20 @@ img.player {
 .devota.say-box, .devota#ui-dialog-body {
   border: 5px;
   border-color: var(--devota-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--devota-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .devota.say-box, .devota#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .devota.say-box, .devota#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--devota-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .devota.say-box:after, .devota#ui-dialog-body:after {
   pointer-events: none;
@@ -1733,9 +1964,20 @@ img.player {
 .devota.book-portrait {
   border: 5px;
   border-color: var(--devota-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--devota-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .devota.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .devota.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--devota-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .devota.book-portrait:after {
   pointer-events: none;
@@ -1764,9 +2006,20 @@ img.player {
 .generic.say-box, .generic#ui-dialog-body {
   border: 5px;
   border-color: var(--generic-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--generic-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .generic.say-box, .generic#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .generic.say-box, .generic#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--generic-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .generic.say-box:after, .generic#ui-dialog-body:after {
   pointer-events: none;
@@ -1789,9 +2042,20 @@ img.player {
 .generic.book-portrait {
   border: 5px;
   border-color: var(--generic-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--generic-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .generic.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .generic.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--generic-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .generic.book-portrait:after {
   pointer-events: none;
@@ -1820,9 +2084,20 @@ img.player {
 .godric.say-box, .godric#ui-dialog-body {
   border: 5px;
   border-color: var(--godric-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--godric-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .godric.say-box, .godric#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .godric.say-box, .godric#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--godric-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .godric.say-box:after, .godric#ui-dialog-body:after {
   pointer-events: none;
@@ -1845,9 +2120,20 @@ img.player {
 .godric.book-portrait {
   border: 5px;
   border-color: var(--godric-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--godric-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .godric.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .godric.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--godric-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .godric.book-portrait:after {
   pointer-events: none;
@@ -1876,9 +2162,20 @@ img.player {
 .guard.say-box, .guard#ui-dialog-body {
   border: 5px;
   border-color: var(--guard-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--guard-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .guard.say-box, .guard#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .guard.say-box, .guard#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--guard-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .guard.say-box:after, .guard#ui-dialog-body:after {
   pointer-events: none;
@@ -1901,9 +2198,20 @@ img.player {
 .guard.book-portrait {
   border: 5px;
   border-color: var(--guard-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--guard-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .guard.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .guard.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--guard-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .guard.book-portrait:after {
   pointer-events: none;
@@ -1932,9 +2240,20 @@ img.player {
 .assassin.say-box, .assassin#ui-dialog-body {
   border: 5px;
   border-color: var(--assassin-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--assassin-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .assassin.say-box, .assassin#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .assassin.say-box, .assassin#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--assassin-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .assassin.say-box:after, .assassin#ui-dialog-body:after {
   pointer-events: none;
@@ -1957,9 +2276,20 @@ img.player {
 .assassin.book-portrait {
   border: 5px;
   border-color: var(--assassin-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--assassin-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .assassin.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .assassin.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--assassin-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .assassin.book-portrait:after {
   pointer-events: none;
@@ -1988,9 +2318,20 @@ img.player {
 .kathryn.say-box, .kathryn#ui-dialog-body {
   border: 5px;
   border-color: var(--kathryn-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--kathryn-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .kathryn.say-box, .kathryn#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .kathryn.say-box, .kathryn#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--kathryn-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .kathryn.say-box:after, .kathryn#ui-dialog-body:after {
   pointer-events: none;
@@ -2013,9 +2354,20 @@ img.player {
 .kathryn.book-portrait {
   border: 5px;
   border-color: var(--kathryn-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--kathryn-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .kathryn.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .kathryn.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--kathryn-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .kathryn.book-portrait:after {
   pointer-events: none;
@@ -2044,9 +2396,20 @@ img.player {
 .velma.say-box, .velma#ui-dialog-body {
   border: 5px;
   border-color: var(--velma-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--velma-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .velma.say-box, .velma#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .velma.say-box, .velma#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--velma-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .velma.say-box:after, .velma#ui-dialog-body:after {
   pointer-events: none;
@@ -2069,9 +2432,20 @@ img.player {
 .velma.book-portrait {
   border: 5px;
   border-color: var(--velma-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--velma-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .velma.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .velma.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--velma-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .velma.book-portrait:after {
   pointer-events: none;
@@ -2100,9 +2474,20 @@ img.player {
 .hyssop.say-box, .hyssop#ui-dialog-body {
   border: 5px;
   border-color: var(--hyssop-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--hyssop-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .hyssop.say-box, .hyssop#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .hyssop.say-box, .hyssop#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--hyssop-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .hyssop.say-box:after, .hyssop#ui-dialog-body:after {
   pointer-events: none;
@@ -2125,9 +2510,20 @@ img.player {
 .hyssop.book-portrait {
   border: 5px;
   border-color: var(--hyssop-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--hyssop-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .hyssop.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .hyssop.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--hyssop-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .hyssop.book-portrait:after {
   pointer-events: none;
@@ -2156,9 +2552,20 @@ img.player {
 .beau.say-box, .beau#ui-dialog-body {
   border: 5px;
   border-color: var(--beau-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--beau-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .beau.say-box, .beau#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .beau.say-box, .beau#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--beau-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .beau.say-box:after, .beau#ui-dialog-body:after {
   pointer-events: none;
@@ -2181,9 +2588,20 @@ img.player {
 .beau.book-portrait {
   border: 5px;
   border-color: var(--beau-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--beau-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .beau.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .beau.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--beau-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .beau.book-portrait:after {
   pointer-events: none;
@@ -2212,9 +2630,20 @@ img.player {
 .cyrus.say-box, .cyrus#ui-dialog-body {
   border: 5px;
   border-color: var(--cyrus-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--cyrus-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .cyrus.say-box, .cyrus#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .cyrus.say-box, .cyrus#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--cyrus-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .cyrus.say-box:after, .cyrus#ui-dialog-body:after {
   pointer-events: none;
@@ -2237,9 +2666,20 @@ img.player {
 .cyrus.book-portrait {
   border: 5px;
   border-color: var(--cyrus-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--cyrus-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .cyrus.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .cyrus.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--cyrus-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .cyrus.book-portrait:after {
   pointer-events: none;
@@ -2268,9 +2708,20 @@ img.player {
 .flint.say-box, .flint#ui-dialog-body {
   border: 5px;
   border-color: var(--flint-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--flint-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .flint.say-box, .flint#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .flint.say-box, .flint#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--flint-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .flint.say-box:after, .flint#ui-dialog-body:after {
   pointer-events: none;
@@ -2293,9 +2744,20 @@ img.player {
 .flint.book-portrait {
   border: 5px;
   border-color: var(--flint-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--flint-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .flint.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .flint.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--flint-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .flint.book-portrait:after {
   pointer-events: none;
@@ -2324,9 +2786,20 @@ img.player {
 .steel.say-box, .steel#ui-dialog-body {
   border: 5px;
   border-color: var(--steel-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--steel-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .steel.say-box, .steel#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .steel.say-box, .steel#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--steel-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .steel.say-box:after, .steel#ui-dialog-body:after {
   pointer-events: none;
@@ -2349,9 +2822,20 @@ img.player {
 .steel.book-portrait {
   border: 5px;
   border-color: var(--steel-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--steel-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .steel.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .steel.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--steel-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .steel.book-portrait:after {
   pointer-events: none;
@@ -2380,9 +2864,20 @@ img.player {
 .reading.say-box, .reading#ui-dialog-body {
   border: 5px;
   border-color: var(--reading-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--reading-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .reading.say-box, .reading#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .reading.say-box, .reading#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--reading-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .reading.say-box:after, .reading#ui-dialog-body:after {
   pointer-events: none;
@@ -2405,9 +2900,20 @@ img.player {
 .reading.book-portrait {
   border: 5px;
   border-color: var(--reading-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--reading-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .reading.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .reading.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--reading-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .reading.book-portrait:after {
   pointer-events: none;
@@ -2436,9 +2942,20 @@ img.player {
 .eve.say-box, .eve#ui-dialog-body {
   border: 5px;
   border-color: var(--eve-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--eve-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .eve.say-box, .eve#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .eve.say-box, .eve#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--eve-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .eve.say-box:after, .eve#ui-dialog-body:after {
   pointer-events: none;
@@ -2461,9 +2978,20 @@ img.player {
 .eve.book-portrait {
   border: 5px;
   border-color: var(--eve-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--eve-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .eve.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .eve.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--eve-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .eve.book-portrait:after {
   pointer-events: none;
@@ -2492,9 +3020,20 @@ img.player {
 .jack.say-box, .jack#ui-dialog-body {
   border: 5px;
   border-color: var(--jack-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--jack-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .jack.say-box, .jack#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .jack.say-box, .jack#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--jack-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .jack.say-box:after, .jack#ui-dialog-body:after {
   pointer-events: none;
@@ -2517,9 +3056,20 @@ img.player {
 .jack.book-portrait {
   border: 5px;
   border-color: var(--jack-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--jack-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .jack.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .jack.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--jack-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .jack.book-portrait:after {
   pointer-events: none;
@@ -2548,9 +3098,20 @@ img.player {
 .quinn.say-box, .quinn#ui-dialog-body {
   border: 5px;
   border-color: var(--quinn-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--quinn-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .quinn.say-box, .quinn#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .quinn.say-box, .quinn#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--quinn-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .quinn.say-box:after, .quinn#ui-dialog-body:after {
   pointer-events: none;
@@ -2573,9 +3134,20 @@ img.player {
 .quinn.book-portrait {
   border: 5px;
   border-color: var(--quinn-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--quinn-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .quinn.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .quinn.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--quinn-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .quinn.book-portrait:after {
   pointer-events: none;
@@ -2604,9 +3176,20 @@ img.player {
 .queen.say-box, .queen#ui-dialog-body {
   border: 5px;
   border-color: var(--queen-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--queen-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .queen.say-box, .queen#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .queen.say-box, .queen#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--queen-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .queen.say-box:after, .queen#ui-dialog-body:after {
   pointer-events: none;
@@ -2629,9 +3212,20 @@ img.player {
 .queen.book-portrait {
   border: 5px;
   border-color: var(--queen-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--queen-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .queen.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .queen.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--queen-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .queen.book-portrait:after {
   pointer-events: none;
@@ -2660,9 +3254,20 @@ img.player {
 .merry.say-box, .merry#ui-dialog-body {
   border: 5px;
   border-color: var(--merry-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--merry-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .merry.say-box, .merry#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .merry.say-box, .merry#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--merry-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .merry.say-box:after, .merry#ui-dialog-body:after {
   pointer-events: none;
@@ -2685,9 +3290,20 @@ img.player {
 .merry.book-portrait {
   border: 5px;
   border-color: var(--merry-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--merry-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .merry.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .merry.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--merry-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .merry.book-portrait:after {
   pointer-events: none;
@@ -2716,9 +3332,20 @@ img.player {
 .spirit.say-box, .spirit#ui-dialog-body {
   border: 5px;
   border-color: var(--spirit-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--spirit-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .spirit.say-box, .spirit#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .spirit.say-box, .spirit#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--spirit-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .spirit.say-box:after, .spirit#ui-dialog-body:after {
   pointer-events: none;
@@ -2741,9 +3368,20 @@ img.player {
 .spirit.book-portrait {
   border: 5px;
   border-color: var(--spirit-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--spirit-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .spirit.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .spirit.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--spirit-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .spirit.book-portrait:after {
   pointer-events: none;
@@ -2772,9 +3410,20 @@ img.player {
 .pepper.say-box, .pepper#ui-dialog-body {
   border: 5px;
   border-color: var(--pepper-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--pepper-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .pepper.say-box, .pepper#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .pepper.say-box, .pepper#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--pepper-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .pepper.say-box:after, .pepper#ui-dialog-body:after {
   pointer-events: none;
@@ -2797,9 +3446,20 @@ img.player {
 .pepper.book-portrait {
   border: 5px;
   border-color: var(--pepper-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--pepper-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .pepper.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .pepper.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--pepper-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .pepper.book-portrait:after {
   pointer-events: none;
@@ -2828,9 +3488,20 @@ img.player {
 .leave.say-box, .leave#ui-dialog-body {
   border: 5px;
   border-color: var(--leave-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--leave-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .leave.say-box, .leave#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .leave.say-box, .leave#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--leave-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .leave.say-box:after, .leave#ui-dialog-body:after {
   pointer-events: none;
@@ -2853,9 +3524,20 @@ img.player {
 .leave.book-portrait {
   border: 5px;
   border-color: var(--leave-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--leave-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .leave.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .leave.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--leave-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .leave.book-portrait:after {
   pointer-events: none;
@@ -2884,9 +3566,20 @@ img.player {
 .bread.say-box, .bread#ui-dialog-body {
   border: 5px;
   border-color: var(--bread-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--bread-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .bread.say-box, .bread#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .bread.say-box, .bread#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--bread-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .bread.say-box:after, .bread#ui-dialog-body:after {
   pointer-events: none;
@@ -2909,9 +3602,20 @@ img.player {
 .bread.book-portrait {
   border: 5px;
   border-color: var(--bread-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--bread-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .bread.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .bread.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--bread-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .bread.book-portrait:after {
   pointer-events: none;
@@ -2940,9 +3644,20 @@ img.player {
 .cat.say-box, .cat#ui-dialog-body {
   border: 5px;
   border-color: var(--cat-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--cat-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .cat.say-box, .cat#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .cat.say-box, .cat#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--cat-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .cat.say-box:after, .cat#ui-dialog-body:after {
   pointer-events: none;
@@ -2965,9 +3680,20 @@ img.player {
 .cat.book-portrait {
   border: 5px;
   border-color: var(--cat-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--cat-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .cat.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .cat.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--cat-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .cat.book-portrait:after {
   pointer-events: none;
@@ -2996,9 +3722,20 @@ img.player {
 .unknown.say-box, .unknown#ui-dialog-body {
   border: 5px;
   border-color: var(--unknown-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--unknown-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .unknown.say-box, .unknown#ui-dialog-body {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .unknown.say-box, .unknown#ui-dialog-body {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--unknown-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .unknown.say-box:after, .unknown#ui-dialog-body:after {
   pointer-events: none;
@@ -3021,9 +3758,20 @@ img.player {
 .unknown.book-portrait {
   border: 5px;
   border-color: var(--unknown-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--unknown-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .unknown.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .unknown.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--unknown-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .unknown.book-portrait:after {
   pointer-events: none;
@@ -3060,9 +3808,20 @@ img.player {
 #story #passages .passage .confessions {
   border: 5px;
   border-color: rgb(247, 215, 34);
-  border-style: dashed;
-  background: color-mix(in srgb, rgb(247, 215, 34), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, rgb(247, 215, 34), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, rgb(247, 215, 34), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  #story #passages .passage .confessions {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, rgb(247, 215, 34), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, rgb(247, 215, 34), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  #story #passages .passage .confessions {
+    border-style: dashed;
+    background-color: color-mix(in srgb, rgb(247, 215, 34), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, rgb(247, 215, 34), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, rgb(247, 215, 34), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 #story #passages .passage .confessions:after {
   pointer-events: none;
@@ -3210,9 +3969,20 @@ img.player {
   text-shadow: 1px 1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), -1px 1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), -1px -1px 0 color-mix(in srgb, var(--theme-color), #000000 50%), 1px -1px 0 color-mix(in srgb, var(--theme-color), #000000 50%);
   border: 5px;
   border-color: var(--theme-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  #store a.equipment-item, #wardrobe a.equipment-item {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  #store a.equipment-item, #wardrobe a.equipment-item {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 #store a.equipment-item:after, #wardrobe a.equipment-item:after {
   pointer-events: none;
@@ -3261,9 +4031,20 @@ img.player {
 #store a.equipment-item[disabled], #wardrobe a.equipment-item[disabled] {
   border: 5px;
   border-color: color-mix(in srgb, var(--theme-color), #000000 50%);
-  border-style: dashed;
-  background: color-mix(in srgb, color-mix(in srgb, var(--theme-color), #000000 50%), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #000000 50%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), #000000 33%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #000000 50%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), #000000 33%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), #000000 33%);
+}
+@container style(--firefox: true) {
+  #store a.equipment-item[disabled], #wardrobe a.equipment-item[disabled] {
+    border-style: solid;
+    background-color: color-mix(in srgb, var(--fill-color), #000000 33%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #000000 50%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), #000000 33%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #000000 50%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), #000000 33%);
+  }
+}
+@container style(--firefox: false) {
+  #store a.equipment-item[disabled], #wardrobe a.equipment-item[disabled] {
+    border-style: dashed;
+    background-color: color-mix(in srgb, color-mix(in srgb, var(--theme-color), #000000 50%), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #000000 50%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), #000000 33%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #000000 50%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), #000000 33%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), #000000 33%);
+  }
 }
 #store a.equipment-item[disabled]:after, #wardrobe a.equipment-item[disabled]:after {
   pointer-events: none;
@@ -3283,9 +4064,20 @@ img.player {
 #store a.equipment-item.selected, #wardrobe a.equipment-item.selected {
   border: 5px;
   border-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  border-style: dashed;
-  background: color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), #ffffff 50%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), #ffffff 50%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), #ffffff 50%);
+}
+@container style(--firefox: true) {
+  #store a.equipment-item.selected, #wardrobe a.equipment-item.selected {
+    border-style: solid;
+    background-color: color-mix(in srgb, var(--fill-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), #ffffff 50%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), #ffffff 50%);
+  }
+}
+@container style(--firefox: false) {
+  #store a.equipment-item.selected, #wardrobe a.equipment-item.selected {
+    border-style: dashed;
+    background-color: color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), #ffffff 50%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), #ffffff 50%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), #ffffff 50%);
+  }
 }
 #store a.equipment-item.selected:after, #wardrobe a.equipment-item.selected:after {
   pointer-events: none;
@@ -3366,9 +4158,20 @@ img.player {
 #store .outfits .outfit, #wardrobe .outfits .outfit {
   border: 5px;
   border-color: var(--theme-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  #store .outfits .outfit, #wardrobe .outfits .outfit {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  #store .outfits .outfit, #wardrobe .outfits .outfit {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 #store .outfits .outfit:after, #wardrobe .outfits .outfit:after {
   pointer-events: none;
@@ -4089,9 +4892,20 @@ area.closed {
 #ui-bar, #right-ui-bar {
   border: 5px;
   border-color: var(--theme-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  #ui-bar, #right-ui-bar {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  #ui-bar, #right-ui-bar {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 #ui-bar:after, #right-ui-bar:after {
   pointer-events: none;
@@ -4184,14 +4998,14 @@ area.closed {
   background-color: transparent;
 }
 #ui-bar:has(.menu-bottom), #right-ui-bar:has(.menu-bottom) {
-  padding-bottom: 72px;
+  padding-bottom: 78px;
 }
 #ui-bar .menu-bottom, #right-ui-bar .menu-bottom {
-  position: absolute;
-  bottom: 5px;
-  margin: auto;
+  position: fixed;
+  bottom: 25px;
   height: 60px;
   width: 256px;
+  z-index: 10;
 }
 #ui-bar .menu-bottom a, #right-ui-bar .menu-bottom a {
   border: 2px ridge var(--theme-color);
@@ -4200,7 +5014,7 @@ area.closed {
   margin: auto;
 }
 #ui-bar .menu-bottom a .patreon-subtext, #right-ui-bar .menu-bottom a .patreon-subtext {
-  display: block;
+  display: inline-block;
 }
 #ui-bar .menu-bottom a, #right-ui-bar .menu-bottom a {
   color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
@@ -4209,9 +5023,20 @@ area.closed {
 #ui-bar .menu-bottom a:hover, #right-ui-bar .menu-bottom a:hover {
   border: 5px;
   border-color: var(--theme-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  #ui-bar .menu-bottom a:hover, #right-ui-bar .menu-bottom a:hover {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  #ui-bar .menu-bottom a:hover, #right-ui-bar .menu-bottom a:hover {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 #ui-bar .menu-bottom a:hover:after, #right-ui-bar .menu-bottom a:hover:after {
   pointer-events: none;
@@ -4228,6 +5053,9 @@ area.closed {
 #ui-bar .menu-bottom a:hover, #right-ui-bar .menu-bottom a:hover {
   text-decoration: underline;
   transform: translateX(-3px);
+}
+#ui-bar .menu-bottom a:hover .patreon-subtext, #right-ui-bar .menu-bottom a:hover .patreon-subtext {
+  text-decoration: underline;
 }
 
 #ui-bar.stowed {
@@ -4326,9 +5154,20 @@ img.blurred {
 .image-wrapper-outer .image-wrapper-inner {
   border: 5px;
   border-color: var(--theme-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .image-wrapper-outer .image-wrapper-inner {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .image-wrapper-outer .image-wrapper-inner {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .image-wrapper-outer .image-wrapper-inner:after {
   pointer-events: none;
@@ -4540,6 +5379,7 @@ a.inline-link img {
   margin: 0;
 }
 .passage a:not(.inline-link) {
+  overflow: hidden;
   border: 5px;
   border-color: var(--player-color);
   border-style: dashed;
@@ -4553,21 +5393,162 @@ a.inline-link img {
   margin: 35px auto;
 }
 .passage a:not(.inline-link):not([disabled]) {
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--player-color), black 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--player-color), black 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  border: 5px;
+  border-color: color-mix(in srgb, var(--player-color), white 10%);
+}
+@container style(--firefox: true) {
+  .passage a:not(.inline-link):not([disabled]) {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .passage a:not(.inline-link):not([disabled]) {
+    border-style: dashed;
+    background-color: color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
+}
+.passage a:not(.inline-link):not([disabled]):after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px;
+  display: var(--magic-visibility);
+  background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
+  animation: var(--magic-time) magic alternate ease-in-out infinite;
 }
 .passage a:not(.inline-link)[disabled] {
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--player-color), black 50%), 0 0 0 10px grey, inset 0 0 0 2px color-mix(in srgb, var(--player-color), black 50%), 0 5px 10px 1px rgba(0, 0, 0, 0.5), inset 0 0 0 15px rgb(106, 106, 106), inset 0 0 100vw 100vw rgb(106, 106, 106);
+  border: 5px;
+  border-color: color-mix(in srgb, var(--player-color), white 10%);
+}
+@container style(--firefox: true) {
+  .passage a:not(.inline-link)[disabled] {
+    border-style: solid;
+    background-color: rgb(106, 106, 106);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px rgb(106, 106, 106), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px rgb(106, 106, 106);
+  }
+}
+@container style(--firefox: false) {
+  .passage a:not(.inline-link)[disabled] {
+    border-style: dashed;
+    background-color: color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px rgb(106, 106, 106), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px rgb(106, 106, 106), inset 0 0 100vw 100vw rgb(106, 106, 106);
+  }
+}
+.passage a:not(.inline-link)[disabled]:after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px;
+  display: var(--magic-visibility);
+  background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
+  animation: var(--magic-time) magic alternate ease-in-out infinite;
 }
 .passage a:not(.inline-link):not([disabled]):focus {
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--player-color), black 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 0 2px color-mix(in srgb, var(--player-color), black 50%), 0 5px 15px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), white 15%);
+  border: 5px;
+  border-color: color-mix(in srgb, var(--player-color), white 10%);
+}
+@container style(--firefox: true) {
+  .passage a:not(.inline-link):not([disabled]):focus {
+    border-style: solid;
+    background-color: color-mix(in srgb, var(--fill-color), white 15%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), white 15%);
+  }
+}
+@container style(--firefox: false) {
+  .passage a:not(.inline-link):not([disabled]):focus {
+    border-style: dashed;
+    background-color: color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), white 15%);
+  }
+}
+.passage a:not(.inline-link):not([disabled]):focus:after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px;
+  display: var(--magic-visibility);
+  background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
+  animation: var(--magic-time) magic alternate ease-in-out infinite;
+}
+.passage a:not(.inline-link):not([disabled]):focus {
   text-decoration: underline;
 }
 .passage a:not(.inline-link):not([disabled]):hover {
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--player-color), black 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 0 2px color-mix(in srgb, var(--player-color), black 50%), 0 5px 15px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), white 15%);
+  border: 5px;
+  border-color: color-mix(in srgb, var(--player-color), white 10%);
+}
+@container style(--firefox: true) {
+  .passage a:not(.inline-link):not([disabled]):hover {
+    border-style: solid;
+    background-color: color-mix(in srgb, var(--fill-color), white 15%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), white 15%);
+  }
+}
+@container style(--firefox: false) {
+  .passage a:not(.inline-link):not([disabled]):hover {
+    border-style: dashed;
+    background-color: color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), white 15%);
+  }
+}
+.passage a:not(.inline-link):not([disabled]):hover:after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px;
+  display: var(--magic-visibility);
+  background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
+  animation: var(--magic-time) magic alternate ease-in-out infinite;
+}
+.passage a:not(.inline-link):not([disabled]):hover {
   transform: translateY(-2px);
 }
 .passage a:not(.inline-link):not([disabled]):active {
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--player-color), black 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--player-color), black 50%), 0 1px 5px 10px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  border: 5px;
+  border-color: color-mix(in srgb, var(--player-color), white 10%);
+}
+@container style(--firefox: true) {
+  .passage a:not(.inline-link):not([disabled]):active {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .passage a:not(.inline-link):not([disabled]):active {
+    border-style: dashed;
+    background-color: color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
+}
+.passage a:not(.inline-link):not([disabled]):active:after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px;
+  display: var(--magic-visibility);
+  background-image: radial-gradient(circle, transparent 10%, var(--magic-color) 99.99%);
+  animation: var(--magic-time) magic alternate ease-in-out infinite;
+}
+.passage a:not(.inline-link):not([disabled]):active {
   transform: translateY(2px);
 }
 .passage a:not(.inline-link) .name:not(.player) {
@@ -4594,9 +5575,20 @@ a.inline-link img {
 .passage .passage-block {
   border: 5px;
   border-color: var(--theme-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .passage .passage-block {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .passage .passage-block {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .passage .passage-block:after {
   pointer-events: none;
@@ -4775,9 +5767,20 @@ a.inline-link img {
 #ui-dialog #ui-dialog-titlebar {
   border: 5px;
   border-color: var(--theme-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  #ui-dialog #ui-dialog-titlebar {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  #ui-dialog #ui-dialog-titlebar {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 #ui-dialog #ui-dialog-titlebar:after {
   pointer-events: none;
@@ -4816,9 +5819,20 @@ a.inline-link img {
 #ui-dialog #ui-dialog-body:not(.character-popup) {
   border: 5px;
   border-color: var(--theme-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  #ui-dialog #ui-dialog-body:not(.character-popup) {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  #ui-dialog #ui-dialog-body:not(.character-popup) {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 #ui-dialog #ui-dialog-body:not(.character-popup):after {
   pointer-events: none;
@@ -5037,34 +6051,34 @@ a.inline-link img {
   transform-box: content-box;
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(1) {
-  transform: translate(-36%) translateY(-21%) rotateZ(267deg);
+  transform: translate(-70%) translateY(-17%) rotateZ(84deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(2) {
-  transform: translate(-23%) translateY(-58%) rotateZ(285deg);
+  transform: translate(-55%) translateY(-88%) rotateZ(180deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(3) {
-  transform: translate(-45%) translateY(-15%) rotateZ(99deg);
+  transform: translate(-88%) translateY(-64%) rotateZ(172deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(4) {
-  transform: translate(-29%) translateY(-80%) rotateZ(196deg);
+  transform: translate(-14%) translateY(-87%) rotateZ(329deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(5) {
-  transform: translate(-16%) translateY(-72%) rotateZ(8deg);
+  transform: translate(-80%) translateY(-77%) rotateZ(164deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(6) {
-  transform: translate(-26%) translateY(-61%) rotateZ(316deg);
+  transform: translate(-92%) translateY(-70%) rotateZ(141deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(7) {
-  transform: translate(-28%) translateY(-36%) rotateZ(34deg);
+  transform: translate(-37%) translateY(-73%) rotateZ(272deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(8) {
-  transform: translate(-11%) translateY(-88%) rotateZ(83deg);
+  transform: translate(-34%) translateY(-42%) rotateZ(237deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(9) {
-  transform: translate(-75%) translateY(-25%) rotateZ(234deg);
+  transform: translate(-78%) translateY(-69%) rotateZ(29deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(10) {
-  transform: translate(-44%) translateY(-38%) rotateZ(9deg);
+  transform: translate(-51%) translateY(-10%) rotateZ(55deg);
 }
 #passages .minigame #coins-parent .small-coins .coin {
   top: 0;
@@ -5073,34 +6087,34 @@ a.inline-link img {
   background-color: #f38f81;
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(1) {
-  transform: translate(0%) translateY(-62%) rotateZ(332deg);
+  transform: translate(-1%) translateY(-84%) rotateZ(265deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(2) {
-  transform: translate(-64%) translateY(-31%) rotateZ(309deg);
+  transform: translate(-8%) translateY(-49%) rotateZ(248deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(3) {
-  transform: translate(-96%) translateY(-75%) rotateZ(121deg);
+  transform: translate(-15%) translateY(-48%) rotateZ(275deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(4) {
-  transform: translate(-32%) translateY(-27%) rotateZ(95deg);
+  transform: translate(-79%) translateY(-35%) rotateZ(297deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(5) {
-  transform: translate(-37%) translateY(-26%) rotateZ(269deg);
+  transform: translate(-34%) translateY(-34%) rotateZ(18deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(6) {
-  transform: translate(-95%) translateY(-5%) rotateZ(44deg);
+  transform: translate(-54%) translateY(-59%) rotateZ(334deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(7) {
-  transform: translate(-51%) translateY(-54%) rotateZ(274deg);
+  transform: translate(-72%) translateY(-65%) rotateZ(238deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(8) {
-  transform: translate(-85%) translateY(-48%) rotateZ(337deg);
+  transform: translate(-41%) translateY(-47%) rotateZ(312deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(9) {
-  transform: translate(-94%) translateY(-28%) rotateZ(80deg);
+  transform: translate(-16%) translateY(0%) rotateZ(75deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(10) {
-  transform: translate(-25%) translateY(-75%) rotateZ(147deg);
+  transform: translate(-55%) translateY(-57%) rotateZ(233deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin {
   top: 100%;
@@ -5109,34 +6123,34 @@ a.inline-link img {
   background-color: #7ca587;
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(1) {
-  transform: translate(-32%) translateY(-20%) rotateZ(325deg);
+  transform: translate(-57%) translateY(-63%) rotateZ(273deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(2) {
-  transform: translate(-82%) translateY(-78%) rotateZ(91deg);
+  transform: translate(-63%) translateY(-20%) rotateZ(152deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(3) {
-  transform: translate(-82%) translateY(-45%) rotateZ(356deg);
+  transform: translate(-69%) translateY(-66%) rotateZ(202deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(4) {
-  transform: translate(-32%) translateY(-79%) rotateZ(219deg);
+  transform: translate(-72%) translateY(-57%) rotateZ(150deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(5) {
-  transform: translate(-82%) translateY(-81%) rotateZ(334deg);
+  transform: translate(-39%) translateY(-29%) rotateZ(174deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(6) {
-  transform: translate(-35%) translateY(-78%) rotateZ(169deg);
+  transform: translate(-46%) translateY(-88%) rotateZ(295deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(7) {
-  transform: translate(-37%) translateY(-82%) rotateZ(270deg);
+  transform: translate(-61%) translateY(-52%) rotateZ(204deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(8) {
-  transform: translate(-32%) translateY(-71%) rotateZ(54deg);
+  transform: translate(-51%) translateY(-85%) rotateZ(137deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(9) {
-  transform: translate(-33%) translateY(-47%) rotateZ(279deg);
+  transform: translate(-51%) translateY(-35%) rotateZ(143deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(10) {
-  transform: translate(-75%) translateY(-49%) rotateZ(352deg);
+  transform: translate(-82%) translateY(-68%) rotateZ(192deg);
 }
 #passages .minigame #coins-parent .large-coins .coin {
   top: 0;
@@ -5145,34 +6159,34 @@ a.inline-link img {
   background-color: #8d809b;
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(1) {
-  transform: translate(-20%) translateY(-55%) rotateZ(323deg);
+  transform: translate(-50%) translateY(-22%) rotateZ(265deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(2) {
-  transform: translate(-33%) translateY(-58%) rotateZ(185deg);
+  transform: translate(-69%) translateY(-39%) rotateZ(262deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(3) {
-  transform: translate(-46%) translateY(-56%) rotateZ(105deg);
+  transform: translate(-24%) translateY(-62%) rotateZ(303deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(4) {
-  transform: translate(-67%) translateY(-33%) rotateZ(168deg);
+  transform: translate(-47%) translateY(-63%) rotateZ(119deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(5) {
-  transform: translate(-41%) translateY(-54%) rotateZ(112deg);
+  transform: translate(-76%) translateY(-39%) rotateZ(328deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(6) {
-  transform: translate(-58%) translateY(-50%) rotateZ(337deg);
+  transform: translate(-26%) translateY(-54%) rotateZ(204deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(7) {
-  transform: translate(-70%) translateY(-73%) rotateZ(318deg);
+  transform: translate(-75%) translateY(-50%) rotateZ(212deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(8) {
-  transform: translate(-33%) translateY(-44%) rotateZ(186deg);
+  transform: translate(-63%) translateY(-76%) rotateZ(272deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(9) {
-  transform: translate(-35%) translateY(-75%) rotateZ(89deg);
+  transform: translate(-77%) translateY(-63%) rotateZ(190deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(10) {
-  transform: translate(-75%) translateY(-43%) rotateZ(332deg);
+  transform: translate(-24%) translateY(-67%) rotateZ(90deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin {
   top: 100%;
@@ -5338,9 +6352,20 @@ a.inline-link img {
 .athelon.say-box, .athelon#ui-dialog-body, .athelon.info-box {
   border: 5px;
   border-color: var(--athelon-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--athelon-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .athelon.say-box, .athelon#ui-dialog-body, .athelon.info-box {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .athelon.say-box, .athelon#ui-dialog-body, .athelon.info-box {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--athelon-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .athelon.say-box:after, .athelon#ui-dialog-body:after, .athelon.info-box:after {
   pointer-events: none;
@@ -5368,9 +6393,20 @@ a.inline-link img {
 .athelon.book-portrait {
   border: 5px;
   border-color: var(--athelon-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--athelon-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .athelon.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .athelon.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--athelon-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .athelon.book-portrait:after {
   pointer-events: none;
@@ -5401,9 +6437,20 @@ a.inline-link img {
 .galdrega.say-box, .galdrega#ui-dialog-body, .galdrega.info-box {
   border: 5px;
   border-color: var(--galdrega-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--galdrega-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .galdrega.say-box, .galdrega#ui-dialog-body, .galdrega.info-box {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .galdrega.say-box, .galdrega#ui-dialog-body, .galdrega.info-box {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--galdrega-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .galdrega.say-box:after, .galdrega#ui-dialog-body:after, .galdrega.info-box:after {
   pointer-events: none;
@@ -5431,9 +6478,20 @@ a.inline-link img {
 .galdrega.book-portrait {
   border: 5px;
   border-color: var(--galdrega-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--galdrega-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .galdrega.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .galdrega.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--galdrega-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .galdrega.book-portrait:after {
   pointer-events: none;
@@ -5464,9 +6522,20 @@ a.inline-link img {
 .pyke.say-box, .pyke#ui-dialog-body, .pyke.info-box {
   border: 5px;
   border-color: var(--pyke-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--pyke-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .pyke.say-box, .pyke#ui-dialog-body, .pyke.info-box {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .pyke.say-box, .pyke#ui-dialog-body, .pyke.info-box {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--pyke-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .pyke.say-box:after, .pyke#ui-dialog-body:after, .pyke.info-box:after {
   pointer-events: none;
@@ -5494,9 +6563,20 @@ a.inline-link img {
 .pyke.book-portrait {
   border: 5px;
   border-color: var(--pyke-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--pyke-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .pyke.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .pyke.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--pyke-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .pyke.book-portrait:after {
   pointer-events: none;
@@ -5527,9 +6607,20 @@ a.inline-link img {
 .aurum.say-box, .aurum#ui-dialog-body, .aurum.info-box {
   border: 5px;
   border-color: var(--aurum-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--aurum-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .aurum.say-box, .aurum#ui-dialog-body, .aurum.info-box {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .aurum.say-box, .aurum#ui-dialog-body, .aurum.info-box {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--aurum-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .aurum.say-box:after, .aurum#ui-dialog-body:after, .aurum.info-box:after {
   pointer-events: none;
@@ -5557,9 +6648,20 @@ a.inline-link img {
 .aurum.book-portrait {
   border: 5px;
   border-color: var(--aurum-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--aurum-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .aurum.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .aurum.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--aurum-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .aurum.book-portrait:after {
   pointer-events: none;
@@ -5590,9 +6692,20 @@ a.inline-link img {
 .empire.say-box, .empire#ui-dialog-body, .empire.info-box {
   border: 5px;
   border-color: var(--empire-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--empire-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .empire.say-box, .empire#ui-dialog-body, .empire.info-box {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .empire.say-box, .empire#ui-dialog-body, .empire.info-box {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--empire-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .empire.say-box:after, .empire#ui-dialog-body:after, .empire.info-box:after {
   pointer-events: none;
@@ -5620,9 +6733,20 @@ a.inline-link img {
 .empire.book-portrait {
   border: 5px;
   border-color: var(--empire-color, #4b4b4b);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--empire-color, #4b4b4b), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+}
+@container style(--firefox: true) {
+  .empire.book-portrait {
+    border-style: solid;
+    background-color: #ddd0ab;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab;
+  }
+}
+@container style(--firefox: false) {
+  .empire.book-portrait {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--empire-color, #4b4b4b), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
+  }
 }
 .empire.book-portrait:after {
   pointer-events: none;
@@ -5706,9 +6830,20 @@ a.inline-link img {
 #notify {
   border: 5px;
   border-color: var(--theme-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  #notify {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  #notify {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 #notify:after {
   pointer-events: none;
@@ -5769,9 +6904,20 @@ a.inline-link img {
 #popup:not(.character-popup) {
   border: 5px;
   border-color: var(--theme-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  #popup:not(.character-popup) {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  #popup:not(.character-popup) {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 #popup:not(.character-popup):after {
   pointer-events: none;
@@ -5795,9 +6941,20 @@ a.inline-link img {
 .info-box:not(.character-popup) {
   border: 5px;
   border-color: var(--theme-color);
-  border-style: dashed;
-  background: color-mix(in srgb, var(--theme-color), #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .info-box:not(.character-popup) {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .info-box:not(.character-popup) {
+    border-style: dashed;
+    background-color: color-mix(in srgb, var(--theme-color), #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .info-box:not(.character-popup):after {
   pointer-events: none;
@@ -6010,7 +7167,7 @@ a.inline-link img {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: radial-gradient(5px 5px at 123px 35px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 176px 69px, rgb(255, 255, 255) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 470px 17px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 431px 312px, rgb(255, 255, 255) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 296px 200px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 102px 390px, rgb(255, 255, 255) 50%, rgba(0, 0, 0, 0));
+  background-image: radial-gradient(5px 5px at 65px 152px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 26px 230px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 70px 313px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 315px 100px, rgb(255, 255, 255) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 159px 221px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 92px 322px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0));
   background-size: 500px 500px;
   animation: snow 7s linear infinite;
   content: "";
@@ -6335,9 +7492,20 @@ span.icon {
 .currency-box.border .currency.mushrooms {
   border: 5px;
   border-color: brown;
-  border-style: dashed;
-  background: color-mix(in srgb, brown, #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, brown, #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, brown, #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .currency-box.border .currency.mushrooms {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, brown, #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, brown, #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .currency-box.border .currency.mushrooms {
+    border-style: dashed;
+    background-color: color-mix(in srgb, brown, #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, brown, #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, brown, #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .currency-box.border .currency.mushrooms:after {
   pointer-events: none;
@@ -6354,9 +7522,20 @@ span.icon {
 .currency-box.border .currency.gold {
   border: 5px;
   border-color: gold;
-  border-style: dashed;
-  background: color-mix(in srgb, gold, #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, gold, #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, gold, #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .currency-box.border .currency.gold {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, gold, #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, gold, #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .currency-box.border .currency.gold {
+    border-style: dashed;
+    background-color: color-mix(in srgb, gold, #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, gold, #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, gold, #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .currency-box.border .currency.gold:after {
   pointer-events: none;
@@ -6373,9 +7552,20 @@ span.icon {
 .currency-box.border .currency.essence {
   border: 5px;
   border-color: white;
-  border-style: dashed;
-  background: color-mix(in srgb, white, #ffffff 50%);
-  box-shadow: 0 0 0 2px color-mix(in srgb, white, #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, white, #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+}
+@container style(--firefox: true) {
+  .currency-box.border .currency.essence {
+    border-style: solid;
+    background-color: var(--fill-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, white, #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, white, #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color);
+  }
+}
+@container style(--firefox: false) {
+  .currency-box.border .currency.essence {
+    border-style: dashed;
+    background-color: color-mix(in srgb, white, #ffffff 50%);
+    box-shadow: 0 0 0 2px color-mix(in srgb, white, #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, white, #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
+  }
 }
 .currency-box.border .currency.essence:after {
   pointer-events: none;
@@ -6877,7 +8067,7 @@ span.icon {
   width: 1px;
   height: 1px;
   background: transparent;
-  box-shadow: 234px 14px #FFF , 216px 38px #FFF , 200px 10px #FFF , 233px 20px #FFF , 17px 42px #FFF , 129px 43px #FFF , 25px 19px #FFF , 43px 32px #FFF , 143px 25px #FFF , 218px 1px #FFF , 220px 27px #FFF , 191px 17px #FFF , 107px 38px #FFF , 188px 20px #FFF , 35px 28px #FFF , 25px 31px #FFF , 216px 41px #FFF , 196px 37px #FFF , 187px 34px #FFF , 204px 30px #FFF , 130px 7px #FFF , 39px 5px #FFF , 157px 43px #FFF , 69px 32px #FFF , 170px 43px #FFF , 225px 11px #FFF , 174px 13px #FFF , 91px 6px #FFF , 130px 33px #FFF , 45px 38px #FFF , 245px 2px #FFF , 216px 9px #FFF , 66px 28px #FFF , 204px 35px #FFF , 6px 40px #FFF , 149px 38px #FFF , 50px 18px #FFF , 213px 20px #FFF , 84px 23px #FFF , 10px 1px #FFF , 172px 4px #FFF , 27px 12px #FFF , 209px 34px #FFF , 89px 11px #FFF , 193px 42px #FFF , 171px 37px #FFF , 169px 40px #FFF , 45px 39px #FFF , 237px 2px #FFF , 127px 21px #FFF , 192px 25px #FFF , 156px 36px #FFF , 91px 16px #FFF , 230px 20px #FFF , 12px 5px #FFF , 65px 35px #FFF , 157px 6px #FFF , 117px 3px #FFF , 57px 41px #FFF , 55px 35px #FFF , 105px 19px #FFF , 170px 13px #FFF , 98px 40px #FFF , 105px 5px #FFF , 219px 6px #FFF , 32px 20px #FFF , 64px 41px #FFF , 162px 10px #FFF , 44px 7px #FFF , 95px 40px #FFF , 192px 5px #FFF , 75px 34px #FFF , 141px 36px #FFF , 185px 21px #FFF , 24px 26px #FFF , 107px 8px #FFF , 52px 35px #FFF , 41px 16px #FFF , 117px 32px #FFF , 42px 15px #FFF , 183px 43px #FFF , 32px 24px #FFF , 230px 39px #FFF , 75px 19px #FFF , 74px 2px #FFF , 65px 3px #FFF , 88px 23px #FFF , 246px 5px #FFF , 223px 40px #FFF , 34px 28px #FFF , 216px 37px #FFF , 119px 12px #FFF , 153px 20px #FFF , 59px 37px #FFF , 113px 14px #FFF , 152px 16px #FFF , 171px 17px #FFF , 69px 38px #FFF , 12px 21px #FFF , 29px 17px #FFF;
+  box-shadow: 197px 9px #FFF , 203px 40px #FFF , 197px 8px #FFF , 225px 31px #FFF , 120px 4px #FFF , 228px 20px #FFF , 93px 31px #FFF , 45px 4px #FFF , 219px 12px #FFF , 214px 2px #FFF , 195px 23px #FFF , 32px 34px #FFF , 10px 17px #FFF , 57px 29px #FFF , 220px 31px #FFF , 135px 13px #FFF , 21px 36px #FFF , 133px 11px #FFF , 63px 23px #FFF , 148px 16px #FFF , 197px 9px #FFF , 109px 15px #FFF , 7px 30px #FFF , 26px 24px #FFF , 16px 25px #FFF , 215px 9px #FFF , 243px 39px #FFF , 95px 31px #FFF , 139px 15px #FFF , 180px 33px #FFF , 17px 22px #FFF , 227px 35px #FFF , 162px 43px #FFF , 183px 26px #FFF , 134px 27px #FFF , 137px 28px #FFF , 225px 20px #FFF , 99px 29px #FFF , 242px 23px #FFF , 81px 11px #FFF , 72px 30px #FFF , 42px 7px #FFF , 74px 41px #FFF , 213px 15px #FFF , 166px 29px #FFF , 107px 39px #FFF , 81px 18px #FFF , 231px 2px #FFF , 140px 30px #FFF , 65px 16px #FFF , 137px 37px #FFF , 145px 5px #FFF , 174px 31px #FFF , 26px 2px #FFF , 230px 26px #FFF , 191px 38px #FFF , 45px 17px #FFF , 27px 23px #FFF , 136px 9px #FFF , 129px 25px #FFF , 21px 3px #FFF , 68px 37px #FFF , 72px 1px #FFF , 15px 11px #FFF , 43px 11px #FFF , 206px 38px #FFF , 160px 9px #FFF , 202px 16px #FFF , 113px 36px #FFF , 170px 21px #FFF , 28px 32px #FFF , 212px 32px #FFF , 164px 41px #FFF , 130px 40px #FFF , 126px 25px #FFF , 128px 40px #FFF , 95px 3px #FFF , 215px 32px #FFF , 107px 29px #FFF , 53px 24px #FFF , 177px 38px #FFF , 26px 41px #FFF , 163px 42px #FFF , 246px 26px #FFF , 202px 22px #FFF , 77px 23px #FFF , 53px 41px #FFF , 75px 19px #FFF , 166px 9px #FFF , 211px 32px #FFF , 48px 8px #FFF , 181px 11px #FFF , 46px 38px #FFF , 165px 25px #FFF , 6px 11px #FFF , 35px 29px #FFF , 23px 27px #FFF , 92px 8px #FFF , 226px 12px #FFF , 9px 42px #FFF;
 }
 #story-caption #time-cycle #stars:after {
   content: " ";
@@ -6886,7 +8076,7 @@ span.icon {
   width: 1px;
   height: 1px;
   background: transparent;
-  box-shadow: 234px 14px #FFF , 216px 38px #FFF , 200px 10px #FFF , 233px 20px #FFF , 17px 42px #FFF , 129px 43px #FFF , 25px 19px #FFF , 43px 32px #FFF , 143px 25px #FFF , 218px 1px #FFF , 220px 27px #FFF , 191px 17px #FFF , 107px 38px #FFF , 188px 20px #FFF , 35px 28px #FFF , 25px 31px #FFF , 216px 41px #FFF , 196px 37px #FFF , 187px 34px #FFF , 204px 30px #FFF , 130px 7px #FFF , 39px 5px #FFF , 157px 43px #FFF , 69px 32px #FFF , 170px 43px #FFF , 225px 11px #FFF , 174px 13px #FFF , 91px 6px #FFF , 130px 33px #FFF , 45px 38px #FFF , 245px 2px #FFF , 216px 9px #FFF , 66px 28px #FFF , 204px 35px #FFF , 6px 40px #FFF , 149px 38px #FFF , 50px 18px #FFF , 213px 20px #FFF , 84px 23px #FFF , 10px 1px #FFF , 172px 4px #FFF , 27px 12px #FFF , 209px 34px #FFF , 89px 11px #FFF , 193px 42px #FFF , 171px 37px #FFF , 169px 40px #FFF , 45px 39px #FFF , 237px 2px #FFF , 127px 21px #FFF , 192px 25px #FFF , 156px 36px #FFF , 91px 16px #FFF , 230px 20px #FFF , 12px 5px #FFF , 65px 35px #FFF , 157px 6px #FFF , 117px 3px #FFF , 57px 41px #FFF , 55px 35px #FFF , 105px 19px #FFF , 170px 13px #FFF , 98px 40px #FFF , 105px 5px #FFF , 219px 6px #FFF , 32px 20px #FFF , 64px 41px #FFF , 162px 10px #FFF , 44px 7px #FFF , 95px 40px #FFF , 192px 5px #FFF , 75px 34px #FFF , 141px 36px #FFF , 185px 21px #FFF , 24px 26px #FFF , 107px 8px #FFF , 52px 35px #FFF , 41px 16px #FFF , 117px 32px #FFF , 42px 15px #FFF , 183px 43px #FFF , 32px 24px #FFF , 230px 39px #FFF , 75px 19px #FFF , 74px 2px #FFF , 65px 3px #FFF , 88px 23px #FFF , 246px 5px #FFF , 223px 40px #FFF , 34px 28px #FFF , 216px 37px #FFF , 119px 12px #FFF , 153px 20px #FFF , 59px 37px #FFF , 113px 14px #FFF , 152px 16px #FFF , 171px 17px #FFF , 69px 38px #FFF , 12px 21px #FFF , 29px 17px #FFF;
+  box-shadow: 197px 9px #FFF , 203px 40px #FFF , 197px 8px #FFF , 225px 31px #FFF , 120px 4px #FFF , 228px 20px #FFF , 93px 31px #FFF , 45px 4px #FFF , 219px 12px #FFF , 214px 2px #FFF , 195px 23px #FFF , 32px 34px #FFF , 10px 17px #FFF , 57px 29px #FFF , 220px 31px #FFF , 135px 13px #FFF , 21px 36px #FFF , 133px 11px #FFF , 63px 23px #FFF , 148px 16px #FFF , 197px 9px #FFF , 109px 15px #FFF , 7px 30px #FFF , 26px 24px #FFF , 16px 25px #FFF , 215px 9px #FFF , 243px 39px #FFF , 95px 31px #FFF , 139px 15px #FFF , 180px 33px #FFF , 17px 22px #FFF , 227px 35px #FFF , 162px 43px #FFF , 183px 26px #FFF , 134px 27px #FFF , 137px 28px #FFF , 225px 20px #FFF , 99px 29px #FFF , 242px 23px #FFF , 81px 11px #FFF , 72px 30px #FFF , 42px 7px #FFF , 74px 41px #FFF , 213px 15px #FFF , 166px 29px #FFF , 107px 39px #FFF , 81px 18px #FFF , 231px 2px #FFF , 140px 30px #FFF , 65px 16px #FFF , 137px 37px #FFF , 145px 5px #FFF , 174px 31px #FFF , 26px 2px #FFF , 230px 26px #FFF , 191px 38px #FFF , 45px 17px #FFF , 27px 23px #FFF , 136px 9px #FFF , 129px 25px #FFF , 21px 3px #FFF , 68px 37px #FFF , 72px 1px #FFF , 15px 11px #FFF , 43px 11px #FFF , 206px 38px #FFF , 160px 9px #FFF , 202px 16px #FFF , 113px 36px #FFF , 170px 21px #FFF , 28px 32px #FFF , 212px 32px #FFF , 164px 41px #FFF , 130px 40px #FFF , 126px 25px #FFF , 128px 40px #FFF , 95px 3px #FFF , 215px 32px #FFF , 107px 29px #FFF , 53px 24px #FFF , 177px 38px #FFF , 26px 41px #FFF , 163px 42px #FFF , 246px 26px #FFF , 202px 22px #FFF , 77px 23px #FFF , 53px 41px #FFF , 75px 19px #FFF , 166px 9px #FFF , 211px 32px #FFF , 48px 8px #FFF , 181px 11px #FFF , 46px 38px #FFF , 165px 25px #FFF , 6px 11px #FFF , 35px 29px #FFF , 23px 27px #FFF , 92px 8px #FFF , 226px 12px #FFF , 9px 42px #FFF;
 }
 #story-caption #time-cycle.morning {
   background-color: rgb(8, 55, 124);
@@ -16301,6 +17491,9 @@ var focus = true;
 // }
 
 function updateMusic(locationUpdate) {
+    if (!variables().location) {
+        return;
+    }
     let area = getArea(true);
     if (area === '' && lastArea === '') {
         return;
@@ -17622,6 +18815,9 @@ Config.navigation.override = function (dest) {
 // Enable hover for mobile
 // $('body').on('touchstart', function() {});
 
+// Firefox graphical bug
+let firefoxAgent = window.navigator.userAgent.indexOf("Firefox") > -1;
+$(":root").css("--firefox", firefoxAgent ? "true" : "false");
 
 
 
@@ -21463,7 +22659,7 @@ Template.add(['asshole'], function() {
 //9926 = v0.0.99z
 //999926 = v0.99.99z
 //99999926 = v99.99.99z
-Config.saves.version = 60500;
+Config.saves.version = 60501;
 
 Config.saves.maxAutoSaves = 3;
 Config.saves.maxSlotSaves = 6;
@@ -55149,6 +56345,11 @@ If you haven&#39;t done so already, come join us on &lt;a href=&quot;https://dis
     &lt;&lt;animation 500ms linear&gt;&gt;
     &lt;&lt;sizing &#39;100%&#39;&gt;&gt;
 &lt;&lt;/newmeter&gt;&gt;</tw-passagedata><tw-passagedata pid="1292" name="Changelog" tags="br no-location no-title" position="225,16225" size="100,100">&lt;&lt;dialog &#39;Changelog&#39; &#39;changelog-menu&#39;&gt;&gt; \
+!!v0.6.5a
+* Fixed a graphical bug that sometimes occurs when playing the game in the latest version of firefox.
+** This is a temporary fix that applies a different styling for firefox users. It will be changed back once this particular issue has been fixed by Mozilla.
+* Fixed a bug where an error would appear sometimes when resuming the game from an inactive browser tab.
+
 !!v0.6.5
 * Added a bunch of content related to going undercover as a servant in the castle. Including several spicy scenes and three peasant skills that can be trained through various events.
 ** Cleaning can be trained by helping ?Orson.
