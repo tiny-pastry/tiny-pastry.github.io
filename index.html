@@ -271,7 +271,7 @@ img.eyes.amber, video.eyes.amber {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.body.outline:after {
+.body.outline:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1183,7 +1183,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--player-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--player-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.player.say-box:after, .player#ui-dialog-body:after {
+.player.say-box:not(.decision):after, .player#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1241,7 +1241,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.king.say-box:after, .king#ui-dialog-body:after {
+.king.say-box:not(.decision):after, .king#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1277,7 +1277,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--king-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.king.book-portrait:after {
+.king.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1319,7 +1319,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.orson.say-box:after, .orson#ui-dialog-body:after {
+.orson.say-box:not(.decision):after, .orson#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1355,7 +1355,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--orson-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.orson.book-portrait:after {
+.orson.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1397,7 +1397,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.morgana.say-box:after, .morgana#ui-dialog-body:after {
+.morgana.say-box:not(.decision):after, .morgana#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1433,7 +1433,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--morgana-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.morgana.book-portrait:after {
+.morgana.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1475,7 +1475,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.rosa.say-box:after, .rosa#ui-dialog-body:after {
+.rosa.say-box:not(.decision):after, .rosa#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1511,7 +1511,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--rosa-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.rosa.book-portrait:after {
+.rosa.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1553,7 +1553,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.andreas.say-box:after, .andreas#ui-dialog-body:after {
+.andreas.say-box:not(.decision):after, .andreas#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1589,7 +1589,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--andreas-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.andreas.book-portrait:after {
+.andreas.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1631,7 +1631,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.sybille.say-box:after, .sybille#ui-dialog-body:after {
+.sybille.say-box:not(.decision):after, .sybille#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1667,7 +1667,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--sybille-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.sybille.book-portrait:after {
+.sybille.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1709,7 +1709,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.leopold.say-box:after, .leopold#ui-dialog-body:after {
+.leopold.say-box:not(.decision):after, .leopold#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1745,7 +1745,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--leopold-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.leopold.book-portrait:after {
+.leopold.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1787,7 +1787,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.wymerus.say-box:after, .wymerus#ui-dialog-body:after {
+.wymerus.say-box:not(.decision):after, .wymerus#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1823,7 +1823,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--wymerus-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.wymerus.book-portrait:after {
+.wymerus.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1865,7 +1865,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.caspar.say-box:after, .caspar#ui-dialog-body:after {
+.caspar.say-box:not(.decision):after, .caspar#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1901,7 +1901,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--caspar-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.caspar.book-portrait:after {
+.caspar.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1943,7 +1943,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.devota.say-box:after, .devota#ui-dialog-body:after {
+.devota.say-box:not(.decision):after, .devota#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1979,7 +1979,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--devota-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.devota.book-portrait:after {
+.devota.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2021,7 +2021,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.generic.say-box:after, .generic#ui-dialog-body:after {
+.generic.say-box:not(.decision):after, .generic#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2057,7 +2057,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--generic-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.generic.book-portrait:after {
+.generic.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2099,7 +2099,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.godric.say-box:after, .godric#ui-dialog-body:after {
+.godric.say-box:not(.decision):after, .godric#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2135,7 +2135,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--godric-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.godric.book-portrait:after {
+.godric.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2177,7 +2177,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.guard.say-box:after, .guard#ui-dialog-body:after {
+.guard.say-box:not(.decision):after, .guard#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2213,7 +2213,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--guard-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.guard.book-portrait:after {
+.guard.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2255,7 +2255,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.assassin.say-box:after, .assassin#ui-dialog-body:after {
+.assassin.say-box:not(.decision):after, .assassin#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2291,7 +2291,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--assassin-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.assassin.book-portrait:after {
+.assassin.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2333,7 +2333,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.kathryn.say-box:after, .kathryn#ui-dialog-body:after {
+.kathryn.say-box:not(.decision):after, .kathryn#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2369,7 +2369,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--kathryn-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.kathryn.book-portrait:after {
+.kathryn.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2411,7 +2411,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.velma.say-box:after, .velma#ui-dialog-body:after {
+.velma.say-box:not(.decision):after, .velma#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2447,7 +2447,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--velma-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.velma.book-portrait:after {
+.velma.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2489,7 +2489,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.hyssop.say-box:after, .hyssop#ui-dialog-body:after {
+.hyssop.say-box:not(.decision):after, .hyssop#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2525,7 +2525,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--hyssop-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.hyssop.book-portrait:after {
+.hyssop.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2567,7 +2567,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.beau.say-box:after, .beau#ui-dialog-body:after {
+.beau.say-box:not(.decision):after, .beau#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2603,7 +2603,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--beau-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.beau.book-portrait:after {
+.beau.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2645,7 +2645,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.cyrus.say-box:after, .cyrus#ui-dialog-body:after {
+.cyrus.say-box:not(.decision):after, .cyrus#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2681,7 +2681,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--cyrus-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.cyrus.book-portrait:after {
+.cyrus.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2723,7 +2723,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.flint.say-box:after, .flint#ui-dialog-body:after {
+.flint.say-box:not(.decision):after, .flint#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2759,7 +2759,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--flint-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.flint.book-portrait:after {
+.flint.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2801,7 +2801,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.steel.say-box:after, .steel#ui-dialog-body:after {
+.steel.say-box:not(.decision):after, .steel#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2837,7 +2837,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--steel-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.steel.book-portrait:after {
+.steel.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2879,7 +2879,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.reading.say-box:after, .reading#ui-dialog-body:after {
+.reading.say-box:not(.decision):after, .reading#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2915,7 +2915,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--reading-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.reading.book-portrait:after {
+.reading.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2957,7 +2957,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.eve.say-box:after, .eve#ui-dialog-body:after {
+.eve.say-box:not(.decision):after, .eve#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -2993,7 +2993,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--eve-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.eve.book-portrait:after {
+.eve.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3035,7 +3035,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.jack.say-box:after, .jack#ui-dialog-body:after {
+.jack.say-box:not(.decision):after, .jack#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3071,7 +3071,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--jack-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.jack.book-portrait:after {
+.jack.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3113,7 +3113,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.quinn.say-box:after, .quinn#ui-dialog-body:after {
+.quinn.say-box:not(.decision):after, .quinn#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3149,7 +3149,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--quinn-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.quinn.book-portrait:after {
+.quinn.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3191,7 +3191,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.queen.say-box:after, .queen#ui-dialog-body:after {
+.queen.say-box:not(.decision):after, .queen#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3227,7 +3227,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--queen-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.queen.book-portrait:after {
+.queen.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3269,7 +3269,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.merry.say-box:after, .merry#ui-dialog-body:after {
+.merry.say-box:not(.decision):after, .merry#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3305,7 +3305,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--merry-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.merry.book-portrait:after {
+.merry.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3347,7 +3347,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.spirit.say-box:after, .spirit#ui-dialog-body:after {
+.spirit.say-box:not(.decision):after, .spirit#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3383,7 +3383,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--spirit-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.spirit.book-portrait:after {
+.spirit.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3425,7 +3425,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.pepper.say-box:after, .pepper#ui-dialog-body:after {
+.pepper.say-box:not(.decision):after, .pepper#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3461,7 +3461,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--pepper-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.pepper.book-portrait:after {
+.pepper.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3503,7 +3503,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.leave.say-box:after, .leave#ui-dialog-body:after {
+.leave.say-box:not(.decision):after, .leave#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3539,7 +3539,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--leave-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.leave.book-portrait:after {
+.leave.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3581,7 +3581,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.bread.say-box:after, .bread#ui-dialog-body:after {
+.bread.say-box:not(.decision):after, .bread#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3617,7 +3617,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--bread-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.bread.book-portrait:after {
+.bread.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3659,7 +3659,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.cat.say-box:after, .cat#ui-dialog-body:after {
+.cat.say-box:not(.decision):after, .cat#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3695,7 +3695,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--cat-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.cat.book-portrait:after {
+.cat.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3737,7 +3737,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.unknown.say-box:after, .unknown#ui-dialog-body:after {
+.unknown.say-box:not(.decision):after, .unknown#ui-dialog-body:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3773,7 +3773,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--unknown-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.unknown.book-portrait:after {
+.unknown.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3823,7 +3823,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, rgb(247, 215, 34), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, rgb(247, 215, 34), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-#story #passages .passage .confessions:after {
+#story #passages .passage .confessions:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -3984,7 +3984,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-#store a.equipment-item:after, #wardrobe a.equipment-item:after {
+#store a.equipment-item:not(.decision):after, #wardrobe a.equipment-item:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -4046,7 +4046,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #000000 50%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), #000000 33%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #000000 50%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), #000000 33%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), #000000 33%);
   }
 }
-#store a.equipment-item[disabled]:after, #wardrobe a.equipment-item[disabled]:after {
+#store a.equipment-item[disabled]:not(.decision):after, #wardrobe a.equipment-item[disabled]:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -4079,7 +4079,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), #ffffff 50%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--theme-color), #ffffff 50%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), #ffffff 50%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), #ffffff 50%);
   }
 }
-#store a.equipment-item.selected:after, #wardrobe a.equipment-item.selected:after {
+#store a.equipment-item.selected:not(.decision):after, #wardrobe a.equipment-item.selected:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -4173,7 +4173,7 @@ img.player {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-#store .outfits .outfit:after, #wardrobe .outfits .outfit:after {
+#store .outfits .outfit:not(.decision):after, #wardrobe .outfits .outfit:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -4907,7 +4907,7 @@ area.closed {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-#ui-bar:after, #right-ui-bar:after {
+#ui-bar:not(.decision):after, #right-ui-bar:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -5038,7 +5038,7 @@ area.closed {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-#ui-bar .menu-bottom a:hover:after, #right-ui-bar .menu-bottom a:hover:after {
+#ui-bar .menu-bottom a:hover:not(.decision):after, #right-ui-bar .menu-bottom a:hover:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -5169,7 +5169,7 @@ img.blurred {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.image-wrapper-outer .image-wrapper-inner:after {
+.image-wrapper-outer .image-wrapper-inner:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -5410,7 +5410,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.passage a:not(.inline-link):not([disabled]):after {
+.passage a:not(.inline-link):not([disabled]):not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -5440,7 +5440,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px rgb(106, 106, 106), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px rgb(106, 106, 106), inset 0 0 100vw 100vw rgb(106, 106, 106);
   }
 }
-.passage a:not(.inline-link)[disabled]:after {
+.passage a:not(.inline-link)[disabled]:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -5470,7 +5470,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), white 15%);
   }
 }
-.passage a:not(.inline-link):not([disabled]):focus:after {
+.passage a:not(.inline-link):not([disabled]):focus:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -5503,7 +5503,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px color-mix(in srgb, var(--fill-color), white 15%), inset 0 0 100vw 100vw color-mix(in srgb, var(--fill-color), white 15%);
   }
 }
-.passage a:not(.inline-link):not([disabled]):hover:after {
+.passage a:not(.inline-link):not([disabled]):hover:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -5536,7 +5536,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, color-mix(in srgb, var(--player-color), white 10%), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.passage a:not(.inline-link):not([disabled]):active:after {
+.passage a:not(.inline-link):not([disabled]):active:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -5590,7 +5590,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.passage .passage-block:after {
+.passage .passage-block:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -5782,7 +5782,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-#ui-dialog #ui-dialog-titlebar:after {
+#ui-dialog #ui-dialog-titlebar:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -5834,7 +5834,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-#ui-dialog #ui-dialog-body:not(.character-popup):after {
+#ui-dialog #ui-dialog-body:not(.character-popup):not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6051,34 +6051,34 @@ a.inline-link img {
   transform-box: content-box;
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(1) {
-  transform: translate(-70%) translateY(-17%) rotateZ(84deg);
+  transform: translate(-28%) translateY(-51%) rotateZ(69deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(2) {
-  transform: translate(-55%) translateY(-88%) rotateZ(180deg);
+  transform: translate(-58%) translateY(-60%) rotateZ(328deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(3) {
-  transform: translate(-88%) translateY(-64%) rotateZ(172deg);
+  transform: translate(-20%) translateY(-91%) rotateZ(340deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(4) {
-  transform: translate(-14%) translateY(-87%) rotateZ(329deg);
+  transform: translate(-35%) translateY(-81%) rotateZ(265deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(5) {
-  transform: translate(-80%) translateY(-77%) rotateZ(164deg);
+  transform: translate(-53%) translateY(-54%) rotateZ(204deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(6) {
-  transform: translate(-92%) translateY(-70%) rotateZ(141deg);
+  transform: translate(-30%) translateY(-85%) rotateZ(346deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(7) {
-  transform: translate(-37%) translateY(-73%) rotateZ(272deg);
+  transform: translate(-44%) translateY(-64%) rotateZ(252deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(8) {
-  transform: translate(-34%) translateY(-42%) rotateZ(237deg);
+  transform: translate(-63%) translateY(-95%) rotateZ(287deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(9) {
-  transform: translate(-78%) translateY(-69%) rotateZ(29deg);
+  transform: translate(-83%) translateY(-74%) rotateZ(259deg);
 }
 #passages .minigame #coins-parent .small-coins .coin:nth-child(10) {
-  transform: translate(-51%) translateY(-10%) rotateZ(55deg);
+  transform: translate(-12%) translateY(-50%) rotateZ(118deg);
 }
 #passages .minigame #coins-parent .small-coins .coin {
   top: 0;
@@ -6087,34 +6087,34 @@ a.inline-link img {
   background-color: #f38f81;
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(1) {
-  transform: translate(-1%) translateY(-84%) rotateZ(265deg);
+  transform: translate(-58%) translateY(-36%) rotateZ(80deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(2) {
-  transform: translate(-8%) translateY(-49%) rotateZ(248deg);
+  transform: translate(-46%) translateY(-23%) rotateZ(256deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(3) {
-  transform: translate(-15%) translateY(-48%) rotateZ(275deg);
+  transform: translate(-64%) translateY(-37%) rotateZ(332deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(4) {
-  transform: translate(-79%) translateY(-35%) rotateZ(297deg);
+  transform: translate(-48%) translateY(-13%) rotateZ(347deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(5) {
-  transform: translate(-34%) translateY(-34%) rotateZ(18deg);
+  transform: translate(-40%) translateY(-42%) rotateZ(302deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(6) {
-  transform: translate(-54%) translateY(-59%) rotateZ(334deg);
+  transform: translate(0%) translateY(-84%) rotateZ(110deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(7) {
-  transform: translate(-72%) translateY(-65%) rotateZ(238deg);
+  transform: translate(-67%) translateY(-21%) rotateZ(280deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(8) {
-  transform: translate(-41%) translateY(-47%) rotateZ(312deg);
+  transform: translate(-21%) translateY(-8%) rotateZ(24deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(9) {
-  transform: translate(-16%) translateY(0%) rotateZ(75deg);
+  transform: translate(-55%) translateY(-49%) rotateZ(331deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin:nth-child(10) {
-  transform: translate(-55%) translateY(-57%) rotateZ(233deg);
+  transform: translate(-83%) translateY(-13%) rotateZ(79deg);
 }
 #passages .minigame #coins-parent .medium-coins .coin {
   top: 100%;
@@ -6123,34 +6123,34 @@ a.inline-link img {
   background-color: #7ca587;
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(1) {
-  transform: translate(-57%) translateY(-63%) rotateZ(273deg);
+  transform: translate(-42%) translateY(-74%) rotateZ(308deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(2) {
-  transform: translate(-63%) translateY(-20%) rotateZ(152deg);
+  transform: translate(-67%) translateY(-31%) rotateZ(254deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(3) {
-  transform: translate(-69%) translateY(-66%) rotateZ(202deg);
+  transform: translate(-70%) translateY(-44%) rotateZ(182deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(4) {
-  transform: translate(-72%) translateY(-57%) rotateZ(150deg);
+  transform: translate(-64%) translateY(-72%) rotateZ(133deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(5) {
-  transform: translate(-39%) translateY(-29%) rotateZ(174deg);
+  transform: translate(-27%) translateY(-50%) rotateZ(163deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(6) {
-  transform: translate(-46%) translateY(-88%) rotateZ(295deg);
+  transform: translate(-69%) translateY(-61%) rotateZ(201deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(7) {
-  transform: translate(-61%) translateY(-52%) rotateZ(204deg);
+  transform: translate(-57%) translateY(-82%) rotateZ(300deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(8) {
-  transform: translate(-51%) translateY(-85%) rotateZ(137deg);
+  transform: translate(-85%) translateY(-61%) rotateZ(186deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(9) {
-  transform: translate(-51%) translateY(-35%) rotateZ(143deg);
+  transform: translate(-43%) translateY(-37%) rotateZ(322deg);
 }
 #passages .minigame #coins-parent .large-coins .coin:nth-child(10) {
-  transform: translate(-82%) translateY(-68%) rotateZ(192deg);
+  transform: translate(-87%) translateY(-41%) rotateZ(96deg);
 }
 #passages .minigame #coins-parent .large-coins .coin {
   top: 0;
@@ -6159,34 +6159,34 @@ a.inline-link img {
   background-color: #8d809b;
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(1) {
-  transform: translate(-50%) translateY(-22%) rotateZ(265deg);
+  transform: translate(-43%) translateY(-52%) rotateZ(60deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(2) {
-  transform: translate(-69%) translateY(-39%) rotateZ(262deg);
+  transform: translate(-75%) translateY(-23%) rotateZ(135deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(3) {
-  transform: translate(-24%) translateY(-62%) rotateZ(303deg);
+  transform: translate(-25%) translateY(-58%) rotateZ(307deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(4) {
-  transform: translate(-47%) translateY(-63%) rotateZ(119deg);
+  transform: translate(-40%) translateY(-45%) rotateZ(76deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(5) {
-  transform: translate(-76%) translateY(-39%) rotateZ(328deg);
+  transform: translate(-58%) translateY(-20%) rotateZ(178deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(6) {
-  transform: translate(-26%) translateY(-54%) rotateZ(204deg);
+  transform: translate(-33%) translateY(-62%) rotateZ(252deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(7) {
-  transform: translate(-75%) translateY(-50%) rotateZ(212deg);
+  transform: translate(-38%) translateY(-75%) rotateZ(140deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(8) {
-  transform: translate(-63%) translateY(-76%) rotateZ(272deg);
+  transform: translate(-35%) translateY(-67%) rotateZ(312deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(9) {
-  transform: translate(-77%) translateY(-63%) rotateZ(190deg);
+  transform: translate(-33%) translateY(-73%) rotateZ(226deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin:nth-child(10) {
-  transform: translate(-24%) translateY(-67%) rotateZ(90deg);
+  transform: translate(-39%) translateY(-60%) rotateZ(265deg);
 }
 #passages .minigame #coins-parent .huge-coins .coin {
   top: 100%;
@@ -6367,7 +6367,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.athelon.say-box:after, .athelon#ui-dialog-body:after, .athelon.info-box:after {
+.athelon.say-box:not(.decision):after, .athelon#ui-dialog-body:not(.decision):after, .athelon.info-box:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6408,7 +6408,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--athelon-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.athelon.book-portrait:after {
+.athelon.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6452,7 +6452,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.galdrega.say-box:after, .galdrega#ui-dialog-body:after, .galdrega.info-box:after {
+.galdrega.say-box:not(.decision):after, .galdrega#ui-dialog-body:not(.decision):after, .galdrega.info-box:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6493,7 +6493,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--galdrega-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.galdrega.book-portrait:after {
+.galdrega.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6537,7 +6537,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.pyke.say-box:after, .pyke#ui-dialog-body:after, .pyke.info-box:after {
+.pyke.say-box:not(.decision):after, .pyke#ui-dialog-body:not(.decision):after, .pyke.info-box:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6578,7 +6578,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--pyke-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.pyke.book-portrait:after {
+.pyke.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6622,7 +6622,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.aurum.say-box:after, .aurum#ui-dialog-body:after, .aurum.info-box:after {
+.aurum.say-box:not(.decision):after, .aurum#ui-dialog-body:not(.decision):after, .aurum.info-box:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6663,7 +6663,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--aurum-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.aurum.book-portrait:after {
+.aurum.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6707,7 +6707,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.empire.say-box:after, .empire#ui-dialog-body:after, .empire.info-box:after {
+.empire.say-box:not(.decision):after, .empire#ui-dialog-body:not(.decision):after, .empire.info-box:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6748,7 +6748,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), 0 0 0 10px #ddd0ab, inset 0 0 0 2px color-mix(in srgb, var(--empire-color, #4b4b4b), #000000 50%), inset 0 0 0 15px #ddd0ab, inset 0 0 100vw 100vw #ddd0ab;
   }
 }
-.empire.book-portrait:after {
+.empire.book-portrait:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6845,7 +6845,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-#notify:after {
+#notify:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6919,7 +6919,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-#popup:not(.character-popup):after {
+#popup:not(.character-popup):not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -6956,7 +6956,7 @@ a.inline-link img {
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, var(--theme-color), #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.info-box:not(.character-popup):after {
+.info-box:not(.character-popup):not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -7167,7 +7167,7 @@ a.inline-link img {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: radial-gradient(5px 5px at 65px 152px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 26px 230px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 70px 313px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 315px 100px, rgb(255, 255, 255) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 159px 221px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 92px 322px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0));
+  background-image: radial-gradient(4px 4px at 54px 225px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 287px 85px, rgb(255, 255, 255) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 155px 123px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 13px 68px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 306px 465px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 450px 469px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0));
   background-size: 500px 500px;
   animation: snow 7s linear infinite;
   content: "";
@@ -7507,7 +7507,7 @@ span.icon {
     box-shadow: 0 0 0 2px color-mix(in srgb, brown, #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, brown, #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.currency-box.border .currency.mushrooms:after {
+.currency-box.border .currency.mushrooms:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -7537,7 +7537,7 @@ span.icon {
     box-shadow: 0 0 0 2px color-mix(in srgb, gold, #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, gold, #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.currency-box.border .currency.gold:after {
+.currency-box.border .currency.gold:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -7567,7 +7567,7 @@ span.icon {
     box-shadow: 0 0 0 2px color-mix(in srgb, white, #000000 50%), 0 0 0 10px var(--fill-color), inset 0 0 0 2px color-mix(in srgb, white, #000000 50%), 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 15px var(--fill-color), inset 0 0 100vw 100vw var(--fill-color);
   }
 }
-.currency-box.border .currency.essence:after {
+.currency-box.border .currency.essence:not(.decision):after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -8067,7 +8067,7 @@ span.icon {
   width: 1px;
   height: 1px;
   background: transparent;
-  box-shadow: 197px 9px #FFF , 203px 40px #FFF , 197px 8px #FFF , 225px 31px #FFF , 120px 4px #FFF , 228px 20px #FFF , 93px 31px #FFF , 45px 4px #FFF , 219px 12px #FFF , 214px 2px #FFF , 195px 23px #FFF , 32px 34px #FFF , 10px 17px #FFF , 57px 29px #FFF , 220px 31px #FFF , 135px 13px #FFF , 21px 36px #FFF , 133px 11px #FFF , 63px 23px #FFF , 148px 16px #FFF , 197px 9px #FFF , 109px 15px #FFF , 7px 30px #FFF , 26px 24px #FFF , 16px 25px #FFF , 215px 9px #FFF , 243px 39px #FFF , 95px 31px #FFF , 139px 15px #FFF , 180px 33px #FFF , 17px 22px #FFF , 227px 35px #FFF , 162px 43px #FFF , 183px 26px #FFF , 134px 27px #FFF , 137px 28px #FFF , 225px 20px #FFF , 99px 29px #FFF , 242px 23px #FFF , 81px 11px #FFF , 72px 30px #FFF , 42px 7px #FFF , 74px 41px #FFF , 213px 15px #FFF , 166px 29px #FFF , 107px 39px #FFF , 81px 18px #FFF , 231px 2px #FFF , 140px 30px #FFF , 65px 16px #FFF , 137px 37px #FFF , 145px 5px #FFF , 174px 31px #FFF , 26px 2px #FFF , 230px 26px #FFF , 191px 38px #FFF , 45px 17px #FFF , 27px 23px #FFF , 136px 9px #FFF , 129px 25px #FFF , 21px 3px #FFF , 68px 37px #FFF , 72px 1px #FFF , 15px 11px #FFF , 43px 11px #FFF , 206px 38px #FFF , 160px 9px #FFF , 202px 16px #FFF , 113px 36px #FFF , 170px 21px #FFF , 28px 32px #FFF , 212px 32px #FFF , 164px 41px #FFF , 130px 40px #FFF , 126px 25px #FFF , 128px 40px #FFF , 95px 3px #FFF , 215px 32px #FFF , 107px 29px #FFF , 53px 24px #FFF , 177px 38px #FFF , 26px 41px #FFF , 163px 42px #FFF , 246px 26px #FFF , 202px 22px #FFF , 77px 23px #FFF , 53px 41px #FFF , 75px 19px #FFF , 166px 9px #FFF , 211px 32px #FFF , 48px 8px #FFF , 181px 11px #FFF , 46px 38px #FFF , 165px 25px #FFF , 6px 11px #FFF , 35px 29px #FFF , 23px 27px #FFF , 92px 8px #FFF , 226px 12px #FFF , 9px 42px #FFF;
+  box-shadow: 14px 21px #FFF , 51px 9px #FFF , 65px 4px #FFF , 223px 29px #FFF , 233px 14px #FFF , 44px 42px #FFF , 60px 19px #FFF , 129px 11px #FFF , 129px 11px #FFF , 97px 7px #FFF , 230px 35px #FFF , 90px 36px #FFF , 237px 39px #FFF , 55px 43px #FFF , 78px 33px #FFF , 138px 29px #FFF , 210px 37px #FFF , 186px 15px #FFF , 67px 30px #FFF , 193px 16px #FFF , 132px 3px #FFF , 218px 16px #FFF , 157px 7px #FFF , 204px 36px #FFF , 94px 38px #FFF , 135px 21px #FFF , 139px 7px #FFF , 103px 19px #FFF , 175px 3px #FFF , 209px 17px #FFF , 95px 15px #FFF , 172px 9px #FFF , 105px 20px #FFF , 130px 35px #FFF , 142px 39px #FFF , 153px 31px #FFF , 82px 33px #FFF , 235px 13px #FFF , 188px 24px #FFF , 179px 1px #FFF , 226px 29px #FFF , 190px 34px #FFF , 142px 9px #FFF , 183px 15px #FFF , 83px 29px #FFF , 172px 21px #FFF , 128px 5px #FFF , 176px 32px #FFF , 92px 18px #FFF , 80px 2px #FFF , 184px 5px #FFF , 190px 16px #FFF , 190px 18px #FFF , 21px 11px #FFF , 75px 35px #FFF , 59px 42px #FFF , 246px 40px #FFF , 234px 15px #FFF , 146px 9px #FFF , 48px 1px #FFF , 160px 17px #FFF , 36px 20px #FFF , 171px 30px #FFF , 127px 27px #FFF , 154px 26px #FFF , 211px 36px #FFF , 9px 20px #FFF , 109px 29px #FFF , 122px 16px #FFF , 29px 37px #FFF , 190px 20px #FFF , 22px 10px #FFF , 68px 17px #FFF , 136px 1px #FFF , 87px 11px #FFF , 81px 27px #FFF , 51px 35px #FFF , 104px 39px #FFF , 19px 8px #FFF , 195px 27px #FFF , 196px 9px #FFF , 163px 16px #FFF , 148px 10px #FFF , 52px 26px #FFF , 50px 33px #FFF , 158px 28px #FFF , 209px 4px #FFF , 60px 10px #FFF , 229px 33px #FFF , 154px 19px #FFF , 64px 12px #FFF , 155px 16px #FFF , 105px 12px #FFF , 226px 13px #FFF , 71px 20px #FFF , 139px 4px #FFF , 100px 35px #FFF , 213px 14px #FFF , 231px 27px #FFF , 145px 3px #FFF;
 }
 #story-caption #time-cycle #stars:after {
   content: " ";
@@ -8076,7 +8076,7 @@ span.icon {
   width: 1px;
   height: 1px;
   background: transparent;
-  box-shadow: 197px 9px #FFF , 203px 40px #FFF , 197px 8px #FFF , 225px 31px #FFF , 120px 4px #FFF , 228px 20px #FFF , 93px 31px #FFF , 45px 4px #FFF , 219px 12px #FFF , 214px 2px #FFF , 195px 23px #FFF , 32px 34px #FFF , 10px 17px #FFF , 57px 29px #FFF , 220px 31px #FFF , 135px 13px #FFF , 21px 36px #FFF , 133px 11px #FFF , 63px 23px #FFF , 148px 16px #FFF , 197px 9px #FFF , 109px 15px #FFF , 7px 30px #FFF , 26px 24px #FFF , 16px 25px #FFF , 215px 9px #FFF , 243px 39px #FFF , 95px 31px #FFF , 139px 15px #FFF , 180px 33px #FFF , 17px 22px #FFF , 227px 35px #FFF , 162px 43px #FFF , 183px 26px #FFF , 134px 27px #FFF , 137px 28px #FFF , 225px 20px #FFF , 99px 29px #FFF , 242px 23px #FFF , 81px 11px #FFF , 72px 30px #FFF , 42px 7px #FFF , 74px 41px #FFF , 213px 15px #FFF , 166px 29px #FFF , 107px 39px #FFF , 81px 18px #FFF , 231px 2px #FFF , 140px 30px #FFF , 65px 16px #FFF , 137px 37px #FFF , 145px 5px #FFF , 174px 31px #FFF , 26px 2px #FFF , 230px 26px #FFF , 191px 38px #FFF , 45px 17px #FFF , 27px 23px #FFF , 136px 9px #FFF , 129px 25px #FFF , 21px 3px #FFF , 68px 37px #FFF , 72px 1px #FFF , 15px 11px #FFF , 43px 11px #FFF , 206px 38px #FFF , 160px 9px #FFF , 202px 16px #FFF , 113px 36px #FFF , 170px 21px #FFF , 28px 32px #FFF , 212px 32px #FFF , 164px 41px #FFF , 130px 40px #FFF , 126px 25px #FFF , 128px 40px #FFF , 95px 3px #FFF , 215px 32px #FFF , 107px 29px #FFF , 53px 24px #FFF , 177px 38px #FFF , 26px 41px #FFF , 163px 42px #FFF , 246px 26px #FFF , 202px 22px #FFF , 77px 23px #FFF , 53px 41px #FFF , 75px 19px #FFF , 166px 9px #FFF , 211px 32px #FFF , 48px 8px #FFF , 181px 11px #FFF , 46px 38px #FFF , 165px 25px #FFF , 6px 11px #FFF , 35px 29px #FFF , 23px 27px #FFF , 92px 8px #FFF , 226px 12px #FFF , 9px 42px #FFF;
+  box-shadow: 14px 21px #FFF , 51px 9px #FFF , 65px 4px #FFF , 223px 29px #FFF , 233px 14px #FFF , 44px 42px #FFF , 60px 19px #FFF , 129px 11px #FFF , 129px 11px #FFF , 97px 7px #FFF , 230px 35px #FFF , 90px 36px #FFF , 237px 39px #FFF , 55px 43px #FFF , 78px 33px #FFF , 138px 29px #FFF , 210px 37px #FFF , 186px 15px #FFF , 67px 30px #FFF , 193px 16px #FFF , 132px 3px #FFF , 218px 16px #FFF , 157px 7px #FFF , 204px 36px #FFF , 94px 38px #FFF , 135px 21px #FFF , 139px 7px #FFF , 103px 19px #FFF , 175px 3px #FFF , 209px 17px #FFF , 95px 15px #FFF , 172px 9px #FFF , 105px 20px #FFF , 130px 35px #FFF , 142px 39px #FFF , 153px 31px #FFF , 82px 33px #FFF , 235px 13px #FFF , 188px 24px #FFF , 179px 1px #FFF , 226px 29px #FFF , 190px 34px #FFF , 142px 9px #FFF , 183px 15px #FFF , 83px 29px #FFF , 172px 21px #FFF , 128px 5px #FFF , 176px 32px #FFF , 92px 18px #FFF , 80px 2px #FFF , 184px 5px #FFF , 190px 16px #FFF , 190px 18px #FFF , 21px 11px #FFF , 75px 35px #FFF , 59px 42px #FFF , 246px 40px #FFF , 234px 15px #FFF , 146px 9px #FFF , 48px 1px #FFF , 160px 17px #FFF , 36px 20px #FFF , 171px 30px #FFF , 127px 27px #FFF , 154px 26px #FFF , 211px 36px #FFF , 9px 20px #FFF , 109px 29px #FFF , 122px 16px #FFF , 29px 37px #FFF , 190px 20px #FFF , 22px 10px #FFF , 68px 17px #FFF , 136px 1px #FFF , 87px 11px #FFF , 81px 27px #FFF , 51px 35px #FFF , 104px 39px #FFF , 19px 8px #FFF , 195px 27px #FFF , 196px 9px #FFF , 163px 16px #FFF , 148px 10px #FFF , 52px 26px #FFF , 50px 33px #FFF , 158px 28px #FFF , 209px 4px #FFF , 60px 10px #FFF , 229px 33px #FFF , 154px 19px #FFF , 64px 12px #FFF , 155px 16px #FFF , 105px 12px #FFF , 226px 13px #FFF , 71px 20px #FFF , 139px 4px #FFF , 100px 35px #FFF , 213px 14px #FFF , 231px 27px #FFF , 145px 3px #FFF;
 }
 #story-caption #time-cycle.morning {
   background-color: rgb(8, 55, 124);
@@ -22659,7 +22659,7 @@ Template.add(['asshole'], function() {
 //9926 = v0.0.99z
 //999926 = v0.99.99z
 //99999926 = v99.99.99z
-Config.saves.version = 60501;
+Config.saves.version = 60502;
 
 Config.saves.maxAutoSaves = 3;
 Config.saves.maxSlotSaves = 6;
@@ -56345,6 +56345,9 @@ If you haven&#39;t done so already, come join us on &lt;a href=&quot;https://dis
     &lt;&lt;animation 500ms linear&gt;&gt;
     &lt;&lt;sizing &#39;100%&#39;&gt;&gt;
 &lt;&lt;/newmeter&gt;&gt;</tw-passagedata><tw-passagedata pid="1292" name="Changelog" tags="br no-location no-title" position="225,16225" size="100,100">&lt;&lt;dialog &#39;Changelog&#39; &#39;changelog-menu&#39;&gt;&gt; \
+!!v0.6.5b
+* Fixed an issue where the stars behind buttons to signify unexplored content were no long showing up.
+
 !!v0.6.5a
 * Fixed a graphical bug that sometimes occurs when playing the game in the latest version of firefox.
 ** This is a temporary fix that applies a different styling for firefox users. It will be changed back once this particular issue has been fixed by Mozilla.
